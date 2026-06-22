@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SA U18 Academy Week Fixtures 2026</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f6f9;
+        color: #333;
+    }
+
+    header {
+        background: #004080;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    header p {
+        margin: 5px 0 0;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .search-box {
+        margin-bottom: 20px;
+    }
+
+    .search-box input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .tabs {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .tab-btn {
+        background: white;
+        border: 2px solid #004080;
+        color: #004080;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .tab-btn.active {
+        background: #004080;
+        color: white;
+    }
+
+    .day {
+        display: none;
+    }
+
+    .day.active {
+        display: block;
+    }
+
+    .fixture-card {
+        background: white;
+        border-radius: 12px;
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .fixture-header {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #004080;
+    }
+
+    .field {
+        margin: 8px 0;
+    }
+
+    .opening {
+        background: #ffe9a8;
+        border-left: 5px solid #f4b400;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: #666;
+    }
+
+    @media (max-width: 600px) {
+        .tab-btn {
+            flex: 1;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>SA U18 Academy Week 2026</h1>
+    <p>Bergsig Special School, Kariega (Uitenhage)</p>
+</header>
+
+<div class="container">
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search for a team...">
+    </div>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="showDay('day1', this)">Day 1</button>
+        <button class="tab-btn" onclick="showDay('day2', this)">Day 2</button>
+        <button class="tab-btn" onclick="showDay('day3', this)">Day 3</button>
+    </div>
+
+    <!-- DAY 1 -->
+    <div id="day1" class="day active">
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 1 • 08:30–09:45</div>
+            <div class="field"><strong>A Field:</strong> BOR (10) vs PUMAS (14)</div>
+            <div class="field"><strong>B Field:</strong> SA LSEN (19) vs LEOP (17)</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 2 • 09:50–11:05</div>
+            <div class="field"><strong>A Field:</strong> FS (9) vs GRIFFONS (13)</div>
+            <div class="field"><strong>B Field:</strong> BOR GRIQ (18) vs CD (20)</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 3 • 11:10–12:25</div>
+            <div class="field"><strong>A Field:</strong> LIONS XV (4) vs BOLAND (8)</div>
+            <div class="field"><strong>B Field:</strong> LIMPOPO (12) vs NAM (16)</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 4 • 12:30–13:45</div>
+            <div class="field"><strong>A Field:</strong> SWD (3) vs BULLS (7)</div>
+            <div class="field"><strong>B Field:</strong> VALKE (11) vs ZIM (15)</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 5 • 13:50–15:05</div>
+            <div class="field"><strong>A Field:</strong> WP (2) vs SHARKS (6)</div>
+        </div>
+
+        <div class="fixture-card opening">
+            <div class="fixture-header">Opening Ceremony</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 6 • 16:00–17:15</div>
+            <div class="field"><strong>A Field:</strong> LIONS (1) vs EP (5)</div>
+        </div>
+
+    </div>
+
+    <!-- DAY 2 -->
+    <div id="day2" class="day">
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 1 • 09:00–10:15</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 2 • 10:20–11:35</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 3 • 11:40–12:55</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 4 • 13:00–14:15</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 5 • 14:20–15:35</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 6 • 15:40–16:55</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+    </div>
+
+    <!-- DAY 3 -->
+    <div id="day3">
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 1 • 08:00–09:15</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 2 • 09:20–10:35</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 3 • 10:40–11:55</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 4 • 12:00–13:15</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+        <div class="fixture-card">
+            <div class="fixture-header">Match 5 • 13:20–14:35</div>
+            <div>Fixtures to be announced.</div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    All matches need to start on time.
+</footer>
+
+<script>
+function showDay(dayId, btn) {
+    document.querySelectorAll('.day').forEach(day => {
+        day.classList.remove('active');
+    });
+
+    document.querySelectorAll('.tab-btn').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    document.getElementById(dayId).classList.add('active');
+    btn.classList.add('active');
+}
+
+document.getElementById('search').addEventListener('keyup', function () {
+    const value = this.value.toLowerCase();
+
+    document.querySelectorAll('.fixture-card').forEach(card => {
+        card.style.display =
+            card.innerText.toLowerCase().includes(value)
+            ? ''
+            : 'none';
+    });
+});
+</script>
+
+</body>
+</html>
