@@ -3,263 +3,220 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SA U18 Academy Week Fixtures 2026</title>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background: #f4f6f9;
-        color: #333;
-    }
+<title>SA U18 Academy Week 2026</title>
 
-    header {
-        background: #004080;
-        color: white;
-        text-align: center;
-        padding: 20px;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    header h1 {
-        margin: 0;
-    }
-
-    header p {
-        margin: 5px 0;
-    }
-
-    .container {
-        max-width: 1000px;
-        margin: auto;
-        padding: 20px;
-    }
-
-    .search-box {
-        margin-bottom: 20px;
-    }
-
-    .search-box input {
-        width: 100%;
-        padding: 12px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        font-size: 16px;
-    }
-
-    .tabs {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
-
-    .tab-btn {
-        padding: 10px 20px;
-        border: 2px solid #004080;
-        background: white;
-        color: #004080;
-        border-radius: 8px;
-        cursor: pointer;
-        font-weight: bold;
-    }
-
-    .tab-btn.active {
-        background: #004080;
-        color: white;
-    }
-
-    .day {
-        display: none;
-    }
-
-    .day.active {
-        display: block;
-    }
-
-    .fixture-card {
-        background: white;
-        border-radius: 12px;
-        padding: 15px;
-        margin-bottom: 15px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .fixture-header {
-        font-weight: bold;
-        color: #004080;
-        margin-bottom: 10px;
-    }
-
-    .field {
-        margin: 8px 0;
-    }
-
-    .opening {
-        background: #fff3cd;
-        border-left: 5px solid #d9534f;
-    }
-
-    footer {
-        background: white;
-        margin-top: 30px;
-        padding: 20px;
-        border-radius: 12px;
-        font-size: 14px;
-        line-height: 1.6;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>SA U18 Academy Week 2026</h1>
-    <p>Bergsig Special School – Kariega (Uitenhage)</p>
-</header>
+<!-- NAVBAR -->
 
-<div class="container">
-
-    <div class="search-box">
-        <input type="text" id="search" placeholder="Search for a team...">
+<nav class="navbar">
+    <div class="logo">
+        🏉 SA U18 Academy Week
     </div>
+
+    <ul class="nav-links">
+        <li><a href="#fixtures">Fixtures</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#venue">Venue</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>SA U18 Academy Week 2026</h1>
+
+        <p>Bergsig Special School • Kariega</p>
+
+        <span>6 – 10 July 2026</span>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h2>20</h2>
+        <p>Teams</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>400+</h2>
+        <p>Players</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>17</h2>
+        <p>Matches</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>3</h2>
+        <p>Match Days</p>
+    </div>
+
+</section>
+
+<!-- WEATHER -->
+
+<section class="weather">
+
+    <h2>Tournament Weather</h2>
+
+    <div class="weather-grid">
+
+        <div class="weather-card">
+            <h3>Day 1</h3>
+            <p>☀️ 22°C</p>
+            <span>Partly Cloudy</span>
+        </div>
+
+        <div class="weather-card">
+            <h3>Day 2</h3>
+            <p>🌤️ 20°C</p>
+            <span>Sunny</span>
+        </div>
+
+        <div class="weather-card">
+            <h3>Day 3</h3>
+            <p>⛅ 19°C</p>
+            <span>Cloudy</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FIXTURES -->
+
+<section id="fixtures" class="fixtures">
+
+    <h2>Fixtures</h2>
 
     <div class="tabs">
-        <button class="tab-btn active" onclick="showDay('day1', this)">Day 1</button>
-        <button class="tab-btn" onclick="showDay('day2', this)">Day 2</button>
-        <button class="tab-btn" onclick="showDay('day3', this)">Day 3</button>
+
+        <button class="tab-btn active" onclick="showDay('day1', this)">
+            Day 1
+        </button>
+
+        <button class="tab-btn" onclick="showDay('day2', this)">
+            Day 2
+        </button>
+
+        <button class="tab-btn" onclick="showDay('day3', this)">
+            Day 3
+        </button>
+
     </div>
 
-    <!-- DAY 1 -->
     <div id="day1" class="day active">
 
-        <div class="fixture-card">
-            <div class="fixture-header">Day 1 • Monday, 06 July 2026 • Match 1 • 08:30–09:45</div>
-            <div class="field"><strong>A-Field:</strong> BOR (10) vs PUMAS (14)</div>
-            <div class="field"><strong>B-Field:</strong> CD (20) vs GRIQ (18)</div>
-        </div>
-
-        <div class="fixture-card">
-            <div class="fixture-header">Match 2 • 09:50–11:05</div>
-            <div class="field"><strong>A-Field:</strong> FS (9) vs GRIFFONS (13)</div>
-            <div class="field"><strong>B-Field:</strong> SA LSEN (19) vs LEOP (17)</div>
-        </div>
-
-        <div class="fixture-card">
-            <div class="fixture-header">Match 3 • 11:10–12:25</div>
-            <div class="field"><strong>A-Field:</strong> LIONS XV (4) vs BOLAND (8)</div>
-            <div class="field"><strong>B-Field:</strong> LIMPOPO (12) vs NAM (16)</div>
-        </div>
-
-        <div class="fixture-card">
-            <div class="fixture-header">Match 4 • 12:30–13:45</div>
-            <div class="field"><strong>A-Field:</strong> SWD (3) vs BULLS (7)</div>
-            <div class="field"><strong>B-Field:</strong> VALKE (11) vs ZIM (15)</div>
-        </div>
-
-        <div class="fixture-card">
-            <div class="fixture-header">Match 5 • 13:50–15:05</div>
-            <div class="field"><strong>A-Field:</strong> WP (2) vs SHARKS (6)</div>
-        </div>
-
-        <div class="fixture-card opening">
-            <div class="fixture-header">OPENING CEREMONY</div>
-        </div>
-
-        <div class="fixture-card">
-            <div class="fixture-header">Match 6 • 16:00–17:15</div>
-            <div class="field"><strong>A-Field:</strong> LIONS (1) vs EP (5)</div>
-        </div>
+        <!-- YOUR FIXTURE CARDS GO HERE -->
 
     </div>
 
-    <!-- DAY 2 -->
     <div id="day2" class="day">
 
-        <div class="fixture-card">
-            <div class="fixture-header">Day 2 • Wednesday, 08 July 2026</div>
-            <div>Match 1 • 09:00–10:15 — Fixtures To Be Decided</div>
-        </div>
-
-        <div class="fixture-card">
-            <div>Match 2 • 10:20–11:35 — Fixtures To Be Decided</div>
-        </div>
-
-        <div class="fixture-card">
-            <div>Match 3 • 11:40–12:55 — Fixtures To Be Decided</div>
-        </div>
-
-        <div class="fixture-card">
-            <div>Match 4 • 13:00–14:15 — Fixtures To Be Decided</div>
-        </div>
-
-        <div class="fixture-card">
-            <div>Match 5 • 14:20–15:35 — Fixtures To Be Decided</div>
-        </div>
-
-        <div class="fixture-card">
-            <div>Match 6 • 15:40–16:55 — Fixtures To Be Decided</div>
-        </div>
+        <!-- DAY 2 -->
 
     </div>
 
-    <!-- DAY 3 -->
     <div id="day3" class="day">
 
-        <div class="fixture-card">
-            <div class="fixture-header">Day 3 • Friday, 10 July 2026</div>
-            <div>Match 1 • 08:30–09:45 — Fixtures To Be Decided</div>
-        </div>
-
-        <div class="fixture-card">
-            <div>Match 2 • 09:50–11:05 — Fixtures To Be Decided</div>
-        </div>
-
-        <div class="fixture-card">
-            <div>Match 3 • 11:10–12:25 — Fixtures To Be Decided</div>
-        </div>
-
-        <div class="fixture-card">
-            <div>Match 4 • 12:30–13:45 — Fixtures To Be Decided</div>
-        </div>
-
-        <div class="fixture-card">
-            <div>Match 5 • 13:50–15:05 — Fixtures To Be Decided</div>
-        </div>
+        <!-- DAY 3 -->
 
     </div>
 
-    <footer>
-        <strong>Important Notice:</strong><br><br>
+</section>
 
-        All matches need to start on time. Team managers to ensure that teams are lined up next to the field 5 minutes before the start of their matches. All team lists (3 copies) for the day must be handed in at the technical table early in the morning.
-    </footer>
+<!-- TEAMS -->
 
-</div>
+<section id="teams" class="teams">
 
-<script>
-function showDay(dayId, btn) {
-    document.querySelectorAll('.day').forEach(day => {
-        day.classList.remove('active');
-    });
+    <h2>Participating Teams</h2>
 
-    document.querySelectorAll('.tab-btn').forEach(button => {
-        button.classList.remove('active');
-    });
+    <div class="team-grid">
 
-    document.getElementById(dayId).classList.add('active');
-    btn.classList.add('active');
-}
+        <a href="teams/lions.html" class="team-card">
+            <img src="images/teams/lions.png">
+            <h3>Lions</h3>
+        </a>
 
-document.getElementById('search').addEventListener('keyup', function() {
-    const value = this.value.toLowerCase();
+        <a href="teams/bulls.html" class="team-card">
+            <img src="images/teams/bulls.png">
+            <h3>Blue Bulls</h3>
+        </a>
 
-    document.querySelectorAll('.fixture-card').forEach(card => {
-        card.style.display =
-            card.innerText.toLowerCase().includes(value) ? '' : 'none';
-    });
-});
-</script>
+        <a href="teams/wp.html" class="team-card">
+            <img src="images/teams/wp.png">
+            <h3>Western Province</h3>
+        </a>
+
+        <a href="teams/pumas.html" class="team-card">
+            <img src="images/teams/pumas.png">
+            <h3>Pumas</h3>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- VENUE -->
+
+<section id="venue" class="venue">
+
+    <h2>Venue Information</h2>
+
+    <div class="venue-card">
+
+        <h3>Bergsig Special School</h3>
+
+        <p>Kariega, Eastern Cape</p>
+
+        <p>
+            Host venue of the 2026 SA U18 Academy Week.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- NOTICE -->
+
+<section class="notice">
+
+    <h2>Important Notice</h2>
+
+    <p>
+        All matches need to start on time.
+        Team managers must ensure teams are lined up
+        five minutes before kick-off.
+    </p>
+
+</section>
+
+<footer>
+
+    © 2026 SA U18 Academy Week
+
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
