@@ -6,6 +6,8 @@
 
 <title>SA U18 Academy Week 2026</title>
 
+<meta name="description" content="Official SA U18 Academy Week 2026 Tournament Website">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -14,21 +16,28 @@
 
 <body>
 
-<!-- NAVBAR -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav class="navbar">
+
     <div class="logo">
-        🏉 SA U18 Academy Week
+        SA U18 Academy Week
     </div>
 
     <ul class="nav-links">
         <li><a href="#fixtures">Fixtures</a></li>
         <li><a href="#teams">Teams</a></li>
+        <li><a href="#weather">Weather</a></li>
         <li><a href="#venue">Venue</a></li>
     </ul>
+
 </nav>
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -37,17 +46,34 @@
     <div class="hero-content">
 
         <div class="hero-badge">
-            🏉 OFFICIAL TOURNAMENT WEBSITE
+            OFFICIAL TOURNAMENT WEBSITE
         </div>
 
         <h1>SA U18 Academy Week 2026</h1>
 
-        <p class="hero-location">
-            Bergsig Special School • Kariega
-        </p>
+        <p>Bergsig Special School • Kariega</p>
 
         <div class="hero-date">
-            6 – 10 July 2026
+            6 - 10 July 2026
+        </div>
+
+        <div id="countdown" class="countdown">
+
+            <div class="count-box">
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+
+            <div class="count-box">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div class="count-box">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
         </div>
 
         <div class="hero-buttons">
@@ -57,7 +83,7 @@
             </a>
 
             <a href="#teams" class="btn-secondary">
-                Teams
+                View Teams
             </a>
 
         </div>
@@ -66,7 +92,9 @@
 
 </section>
 
-<!-- STATS -->
+<!-- =========================
+     TOURNAMENT STATS
+========================= -->
 
 <section class="stats">
 
@@ -76,7 +104,7 @@
     </div>
 
     <div class="stat-card">
-        <h2>400+</h2>
+        <h2>460+</h2>
         <p>Players</p>
     </div>
 
@@ -87,33 +115,35 @@
 
     <div class="stat-card">
         <h2>3</h2>
-        <p>Match Days</p>
+        <p>Days</p>
     </div>
 
 </section>
 
-<!-- WEATHER -->
+<!-- =========================
+     WEATHER
+========================= -->
 
-<section class="weather">
+<section id="weather" class="weather">
 
     <h2>Tournament Weather</h2>
 
     <div class="weather-grid">
 
         <div class="weather-card">
-            <h3>Day 1</h3>
+            <h3>Monday</h3>
             <p>☀️ 22°C</p>
             <span>Partly Cloudy</span>
         </div>
 
         <div class="weather-card">
-            <h3>Day 2</h3>
+            <h3>Wednesday</h3>
             <p>🌤️ 20°C</p>
             <span>Sunny</span>
         </div>
 
         <div class="weather-card">
-            <h3>Day 3</h3>
+            <h3>Friday</h3>
             <p>⛅ 19°C</p>
             <span>Cloudy</span>
         </div>
@@ -122,7 +152,9 @@
 
 </section>
 
-<!-- FIXTURES -->
+<!-- =========================
+     FIXTURES
+========================= -->
 
 <section id="fixtures" class="fixtures">
 
@@ -144,57 +176,35 @@
 
     </div>
 
-<div id="day1" class="day active">
+    <!-- DAY 1 -->
 
-    <div class="fixture-card">
+    <div id="day1" class="day active">
 
-        <div class="fixture-header">
-            Match 1 • Monday 6 July 2026 • 08:30 - 09:45
-        </div>
-
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/border.png" alt="Border">
-                <h3>Border</h3>
-                <span>Seed 10</span>
-            </div>
-
-            <div class="vs">
-                VS
-            </div>
-
-            <div class="team">
-                <img src="images/teams/pumas.png" alt="Pumas">
-                <h3>Pumas</h3>
-                <span>Seed 14</span>
-            </div>
-
-        </div>
-
-        <div class="match-info">
-            A Field
-        </div>
+        <!-- ALL DAY 1 FIXTURES GO HERE -->
 
     </div>
 
-</div>
+    <!-- DAY 2 -->
 
     <div id="day2" class="day">
 
-        <!-- DAY 2 -->
+        <!-- ALL DAY 2 FIXTURES GO HERE -->
 
     </div>
 
+    <!-- DAY 3 -->
+
     <div id="day3" class="day">
 
-        <!-- DAY 3 -->
+        <!-- ALL DAY 3 FIXTURES GO HERE -->
 
     </div>
 
 </section>
 
-<!-- TEAMS -->
+<!-- =========================
+     TEAMS
+========================= -->
 
 <section id="teams" class="teams">
 
@@ -203,30 +213,34 @@
     <div class="team-grid">
 
         <a href="teams/lions.html" class="team-card">
-            <img src="images/teams/lions.png">
+            <img src="images/teams/lions.png" alt="Lions">
             <h3>Lions</h3>
         </a>
 
         <a href="teams/bulls.html" class="team-card">
-            <img src="images/teams/bulls.png">
+            <img src="images/teams/bulls.png" alt="Blue Bulls">
             <h3>Blue Bulls</h3>
         </a>
 
         <a href="teams/wp.html" class="team-card">
-            <img src="images/teams/wp.png">
+            <img src="images/teams/wp.png" alt="Western Province">
             <h3>Western Province</h3>
         </a>
 
         <a href="teams/pumas.html" class="team-card">
-            <img src="images/teams/pumas.png">
+            <img src="images/teams/pumas.png" alt="Pumas">
             <h3>Pumas</h3>
         </a>
+
+        <!-- ADD REMAINING TEAMS -->
 
     </div>
 
 </section>
 
-<!-- VENUE -->
+<!-- =========================
+     VENUE
+========================= -->
 
 <section id="venue" class="venue">
 
@@ -239,30 +253,46 @@
         <p>Kariega, Eastern Cape</p>
 
         <p>
-            Host venue of the 2026 SA U18 Academy Week.
+            Host venue of the SA U18 Academy Week 2026.
         </p>
 
     </div>
 
 </section>
 
-<!-- NOTICE -->
+<!-- =========================
+     NOTICE
+========================= -->
 
 <section class="notice">
 
     <h2>Important Notice</h2>
 
     <p>
-        All matches need to start on time.
-        Team managers must ensure teams are lined up
-        five minutes before kick-off.
+        All matches must start on time. Team managers are requested to ensure that players are at the field five minutes before kick-off. Team sheets must be submitted to the technical table before the start of play.
     </p>
 
 </section>
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-    © 2026 SA U18 Academy Week
+    <div class="footer-content">
+
+        <h3>SA U18 Academy Week 2026</h3>
+
+        <p>
+            Bergsig Special School • Kariega
+        </p>
+
+        <p>
+            Official Tournament Website
+        </p>
+
+    </div>
 
 </footer>
 
