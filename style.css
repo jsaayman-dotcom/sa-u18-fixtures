@@ -1,0 +1,425 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fa;
+    color:#222;
+    line-height:1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:#002b5c;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+    color:white;
+    font-size:1.2rem;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#f4b400;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    position:relative;
+    min-height:70vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:url("../images/hero-bg.jpg") center center/cover;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,20,50,.65);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    margin-bottom:10px;
+}
+
+.hero-content span{
+    display:inline-block;
+
+    background:#f4b400;
+    color:#002b5c;
+
+    padding:10px 20px;
+    border-radius:30px;
+
+    font-weight:600;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    max-width:1200px;
+    margin:-60px auto 60px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+
+    padding:0 20px;
+    position:relative;
+    z-index:10;
+}
+
+.stat-card{
+    background:white;
+    border-radius:18px;
+
+    padding:30px;
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.stat-card h2{
+    color:#002b5c;
+    font-size:2.5rem;
+}
+
+.stat-card p{
+    margin-top:10px;
+    color:#666;
+}
+
+/* =========================
+   WEATHER
+========================= */
+
+.weather{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.weather h2{
+    text-align:center;
+    color:#002b5c;
+    margin-bottom:30px;
+}
+
+.weather-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.weather-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.weather-card:hover{
+    transform:translateY(-5px);
+}
+
+.weather-card h3{
+    color:#002b5c;
+}
+
+.weather-card p{
+    font-size:2rem;
+    margin:15px 0;
+}
+
+/* =========================
+   FIXTURES
+========================= */
+
+.fixtures{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.fixtures h2{
+    text-align:center;
+    color:#002b5c;
+    margin-bottom:30px;
+}
+
+.tabs{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.tab-btn{
+    border:none;
+    background:white;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.tab-btn.active{
+    background:#002b5c;
+    color:white;
+}
+
+.day{
+    display:none;
+}
+
+.day.active{
+    display:block;
+}
+
+.fixture-card{
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+    margin-bottom:20px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.fixture-card:hover{
+    transform:translateY(-4px);
+}
+
+.fixture-header{
+    color:#002b5c;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.field{
+    margin:10px 0;
+}
+
+.opening{
+    background:#fff9e6;
+    border-left:6px solid #f4b400;
+}
+
+/* =========================
+   TEAMS
+========================= */
+
+.teams{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.teams h2{
+    text-align:center;
+    color:#002b5c;
+    margin-bottom:30px;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.team-card{
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    text-decoration:none;
+    color:#222;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.team-card:hover{
+    transform:translateY(-8px);
+}
+
+.team-card img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.team-card h3{
+    color:#002b5c;
+}
+
+/* =========================
+   VENUE
+========================= */
+
+.venue{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.venue h2{
+    text-align:center;
+    color:#002b5c;
+    margin-bottom:30px;
+}
+
+.venue-card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* =========================
+   NOTICE
+========================= */
+
+.notice{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+.notice h2{
+    color:#002b5c;
+    margin-bottom:20px;
+}
+
+.notice p{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#002b5c;
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+    margin-top:50px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:2.3rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .stats{
+        margin-top:-30px;
+    }
+}
