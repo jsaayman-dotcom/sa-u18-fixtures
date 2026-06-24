@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -9,6 +10,7 @@
 <title>SA U18 Academy Week 2026</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
@@ -18,21 +20,38 @@
 <body>
 
 <!-- =========================
-NAVBAR
+NAVIGATION
 ========================= -->
 
 <nav class="navbar">
 
-    <div class="logo">
-        SA U18 Academy Week 2026
-    </div>
+```
+<div class="logo">
 
-    <ul class="nav-links">
-        <li><a href="#fixtures">Fixtures</a></li>
-        <li><a href="#teams">Teams</a></li>
-        <li><a href="#weather">Weather</a></li>
-        <li><a href="#venue">Venue</a></li>
-    </ul>
+    SA U18 Academy Week 2026
+
+</div>
+
+<ul class="nav-links">
+
+    <li>
+        <a href="#fixtures">Fixtures</a>
+    </li>
+
+    <li>
+        <a href="#teams">Teams</a>
+    </li>
+
+    <li>
+        <a href="#weather">Weather</a>
+    </li>
+
+    <li>
+        <a href="#venue">Venue</a>
+    </li>
+
+</ul>
+```
 
 </nav>
 
@@ -42,25 +61,33 @@ HERO
 
 <section class="hero">
 
-    <div class="hero-overlay"></div>
+```
+<div class="hero-overlay"></div>
 
-    <div class="hero-content">
+<div class="hero-content">
 
-        <h1>SA U18 Academy Week 2026</h1>
+    <h1>
+        SA U18 Academy Week 2026
+    </h1>
 
-        <p>
-            Bergsig Special School • Kariega
-        </p>
+    <p>
+        Bergsig Special School • Kariega
+    </p>
 
-        <div class="hero-date">
-            6 – 10 July 2026
-        </div>
+    <div class="hero-date">
 
-        <a href="#fixtures" class="hero-btn">
-            View Fixtures
-        </a>
+        6 – 10 July 2026
 
     </div>
+
+    <a href="#fixtures" class="hero-btn">
+
+        View Fixtures
+
+    </a>
+
+</div>
+```
 
 </section>
 
@@ -70,315 +97,274 @@ FIXTURES
 
 <section id="fixtures" class="fixtures">
 
-    <h2>Fixtures</h2>
+```
+<h2>
+    Tournament Fixtures
+</h2>
 
-    <div class="tabs">
+<div class="tabs">
 
-        <button class="tab-btn active"
+    <button
+        class="tab-btn active"
         onclick="showDay('day1', this)">
-            Day 1
-        </button>
 
-        <button class="tab-btn"
+        Day 1
+
+    </button>
+
+    <button
+        class="tab-btn"
         onclick="showDay('day2', this)">
-            Day 2
-        </button>
 
-        <button class="tab-btn"
+        Day 2
+
+    </button>
+
+    <button
+        class="tab-btn"
         onclick="showDay('day3', this)">
-            Day 3
-        </button>
+
+        Day 3
+
+    </button>
+
+</div>
+
+<!-- DAY 1 -->
+
+<div id="day1" class="day active">
+
+    <table class="fixture-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Time</th>
+                <th>Field</th>
+                <th>Fixture</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>08:30</td>
+                <td>A Field</td>
+                <td>Border vs Pumas</td>
+            </tr>
+
+            <tr>
+                <td>08:30</td>
+                <td>B Field</td>
+                <td>Border CD vs Griquas</td>
+            </tr>
+
+            <tr>
+                <td>09:50</td>
+                <td>A Field</td>
+                <td>Free State vs Griffons</td>
+            </tr>
+
+            <tr>
+                <td>09:50</td>
+                <td>B Field</td>
+                <td>SA LSEN vs Leopards</td>
+            </tr>
+
+            <tr>
+                <td>11:10</td>
+                <td>A Field</td>
+                <td>Lions XV vs Boland</td>
+            </tr>
+
+            <tr>
+                <td>11:10</td>
+                <td>B Field</td>
+                <td>Limpopo Blue Bulls vs Namibia</td>
+            </tr>
+
+            <tr>
+                <td>12:30</td>
+                <td>A Field</td>
+                <td>SWD vs Blue Bulls</td>
+            </tr>
+
+            <tr>
+                <td>12:30</td>
+                <td>B Field</td>
+                <td>Valke vs Zimbabwe</td>
+            </tr>
+
+            <tr>
+                <td>13:50</td>
+                <td>A Field</td>
+                <td>Western Province vs Sharks</td>
+            </tr>
+
+            <tr class="opening-row">
+                <td>15:15</td>
+                <td>-</td>
+                <td>Opening Ceremony</td>
+            </tr>
+
+            <tr>
+                <td>16:00</td>
+                <td>A Field</td>
+                <td>Lions vs Eastern Province</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- DAY 2 -->
+
+<div id="day2" class="day">
+
+    <div class="coming-soon">
+
+        Fixtures To Be Confirmed
 
     </div>
 
-    <!-- DAY 1 -->
+</div>
 
-    <div id="day1" class="day active">
+<!-- DAY 3 -->
 
-        <table class="fixture-table">
+<div id="day3" class="day">
 
-            <thead>
+    <div class="coming-soon">
 
-                <tr>
-                    <th>Time</th>
-                    <th>Field</th>
-                    <th>Fixture</th>
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td>08:30</td>
-                    <td>A Field</td>
-                    <td>Border vs Pumas</td>
-                </tr>
-
-                <tr>
-                    <td>08:30</td>
-                    <td>B Field</td>
-                    <td>Border CD vs Griquas</td>
-                </tr>
-
-                <tr>
-                    <td>09:50</td>
-                    <td>A Field</td>
-                    <td>Free State vs Griffons</td>
-                </tr>
-
-                <tr>
-                    <td>09:50</td>
-                    <td>B Field</td>
-                    <td>SA LSEN vs Leopards</td>
-                </tr>
-
-                <tr>
-                    <td>11:10</td>
-                    <td>A Field</td>
-                    <td>Lions XV vs Boland</td>
-                </tr>
-
-                <tr>
-                    <td>11:10</td>
-                    <td>B Field</td>
-                    <td>Limpopo Blue Bulls vs Namibia</td>
-                </tr>
-
-                <tr>
-                    <td>12:30</td>
-                    <td>A Field</td>
-                    <td>SWD vs Blue Bulls</td>
-                </tr>
-
-                <tr>
-                    <td>12:30</td>
-                    <td>B Field</td>
-                    <td>Valke vs Zimbabwe</td>
-                </tr>
-
-                <tr>
-                    <td>13:50</td>
-                    <td>A Field</td>
-                    <td>Western Province vs Sharks</td>
-                </tr>
-
-                <tr class="opening-row">
-                    <td>15:15</td>
-                    <td>-</td>
-                    <td>Opening Ceremony</td>
-                </tr>
-
-                <tr>
-                    <td>16:00</td>
-                    <td>A Field</td>
-                    <td>Lions vs Eastern Province</td>
-                </tr>
-
-            </tbody>
-
-        </table>
+        Fixtures To Be Confirmed
 
     </div>
 
-    <!-- DAY 2 -->
-
-    <div id="day2" class="day">
-
-        <div class="coming-soon">
-
-            Fixtures To Be Confirmed
-
-        </div>
-
-    </div>
-
-    <!-- DAY 3 -->
-
-    <div id="day3" class="day">
-
-        <div class="coming-soon">
-
-            Fixtures To Be Confirmed
-
-        </div>
-
-    </div>
+</div>
+```
 
 </section>
-
 <!-- =========================
 PARTICIPATING TEAMS
 ========================= -->
 
 <section id="teams" class="teams">
 
-    <h2>Participating Teams</h2>
+```
+<h2>Participating Teams</h2>
 
-    <div class="team-grid">
+<p class="teams-subtitle">
+    Click any team logo to view squad information.
+</p>
 
-        <div class="team-card" onclick="openTeam('lions')">
-            <img src="images/teams/lions.png" alt="Lions">
-            <p>Lions</p>
-        </div>
+<div class="team-grid">
 
-        <div class="team-card" onclick="openTeam('lionsxv')">
-            <img src="images/teams/lionsxv.png" alt="Lions XV">
-            <p>Lions XV</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('bulls')">
-            <img src="images/teams/bulls.png" alt="Blue Bulls">
-            <p>Blue Bulls</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('limpopo')">
-            <img src="images/teams/bulls.png" alt="Limpopo Blue Bulls">
-            <p>Limpopo Blue Bulls</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('wp')">
-            <img src="images/teams/wp.png" alt="Western Province">
-            <p>Western Province</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('sharks')">
-            <img src="images/teams/sharks.png" alt="Sharks">
-            <p>Sharks</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('ep')">
-            <img src="images/teams/ep.png" alt="Eastern Province">
-            <p>Eastern Province</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('border')">
-            <img src="images/teams/border.png" alt="Border">
-            <p>Border</p>
-        </div>
-                <div class="team-card" onclick="openTeam('bordercd')">
-            <img src="images/teams/border.png" alt="Border CD">
-            <p>Border CD</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('boland')">
-            <img src="images/teams/boland.png" alt="Boland">
-            <p>Boland</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('freestate')">
-            <img src="images/teams/freestate.png" alt="Free State">
-            <p>Free State</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('griffons')">
-            <img src="images/teams/griffons.png" alt="Griffons">
-            <p>Griffons</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('griquas')">
-            <img src="images/teams/griquas.png" alt="Griquas">
-            <p>Griquas</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('leopards')">
-            <img src="images/teams/leopards.png" alt="Leopards">
-            <p>Leopards</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('pumas')">
-            <img src="images/teams/pumas.png" alt="Pumas">
-            <p>Pumas</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('valke')">
-            <img src="images/teams/valke.png" alt="Valke">
-            <p>Valke</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('swd')">
-            <img src="images/teams/swd.png" alt="SWD">
-            <p>SWD</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('namibia')">
-            <img src="images/teams/namibia.png" alt="Namibia">
-            <p>Namibia</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('zimbabwe')">
-            <img src="images/teams/zimbabwe.png" alt="Zimbabwe">
-            <p>Zimbabwe</p>
-        </div>
-
-        <div class="team-card" onclick="openTeam('salsen')">
-            <img src="images/teams/salsen.png" alt="SA LSEN">
-            <p>SA LSEN</p>
-        </div>
-
+    <div class="team-card" onclick="openTeam('lions')">
+        <img src="images/teams/lions.png" alt="Lions">
+        <p>Lions</p>
     </div>
 
-</section>
-
-<!-- =========================
-WEATHER
-========================= -->
-
-<section id="weather" class="weather">
-
-    <h2>Tournament Weather</h2>
-
-    <div class="weather-grid">
-
-        <div class="weather-card">
-            <h3>Monday</h3>
-            <div class="weather-icon">☀️</div>
-            <p>Day 1</p>
-            <span>Weather To Be Updated</span>
-        </div>
-
-        <div class="weather-card">
-            <h3>Wednesday</h3>
-            <div class="weather-icon">⛅</div>
-            <p>Day 2</p>
-            <span>Weather To Be Updated</span>
-        </div>
-
-        <div class="weather-card">
-            <h3>Friday</h3>
-            <div class="weather-icon">🌤️</div>
-            <p>Day 3</p>
-            <span>Weather To Be Updated</span>
-        </div>
-
+    <div class="team-card" onclick="openTeam('lionsxv')">
+        <img src="images/teams/lionsxv.png" alt="Lions XV">
+        <p>Lions XV</p>
     </div>
 
-</section>
-
-<!-- =========================
-VENUE
-========================= -->
-
-<section id="venue" class="venue">
-
-    <h2>Venue Information</h2>
-
-    <div class="venue-card">
-
-        <h3>Bergsig Special School</h3>
-
-        <p>Kariega, Eastern Cape</p>
-
-        <p>
-            Host venue of the SA U18 Academy Week 2026.
-        </p>
-
-        <p>
-            All teams are requested to report to the
-            technical table before their scheduled fixtures.
-        </p>
-
+    <div class="team-card" onclick="openTeam('bulls')">
+        <img src="images/teams/bulls.png" alt="Blue Bulls">
+        <p>Blue Bulls</p>
     </div>
+
+    <div class="team-card" onclick="openTeam('limpopo')">
+        <img src="images/teams/bulls.png" alt="Limpopo Blue Bulls">
+        <p>Limpopo Blue Bulls</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('wp')">
+        <img src="images/teams/wp.png" alt="Western Province">
+        <p>Western Province</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('sharks')">
+        <img src="images/teams/sharks.png" alt="Sharks">
+        <p>Sharks</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('ep')">
+        <img src="images/teams/ep.png" alt="Eastern Province">
+        <p>Eastern Province</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('border')">
+        <img src="images/teams/border.png" alt="Border">
+        <p>Border</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('bordercd')">
+        <img src="images/teams/border.png" alt="Border CD">
+        <p>Border CD</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('boland')">
+        <img src="images/teams/boland.png" alt="Boland">
+        <p>Boland</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('freestate')">
+        <img src="images/teams/freestate.png" alt="Free State">
+        <p>Free State</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('griffons')">
+        <img src="images/teams/griffons.png" alt="Griffons">
+        <p>Griffons</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('griquas')">
+        <img src="images/teams/griquas.png" alt="Griquas">
+        <p>Griquas</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('leopards')">
+        <img src="images/teams/leopards.png" alt="Leopards">
+        <p>Leopards</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('pumas')">
+        <img src="images/teams/pumas.png" alt="Pumas">
+        <p>Pumas</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('valke')">
+        <img src="images/teams/valke.png" alt="Valke">
+        <p>Valke</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('swd')">
+        <img src="images/teams/swd.png" alt="SWD">
+        <p>SWD</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('namibia')">
+        <img src="images/teams/namibia.png" alt="Namibia">
+        <p>Namibia</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('zimbabwe')">
+        <img src="images/teams/zimbabwe.png" alt="Zimbabwe">
+        <p>Zimbabwe</p>
+    </div>
+
+    <div class="team-card" onclick="openTeam('salsen')">
+        <img src="images/teams/salsen.png" alt="SA LSEN">
+        <p>SA LSEN</p>
+    </div>
+
+</div>
+```
 
 </section>
 
@@ -388,18 +374,117 @@ TEAM MODAL
 
 <div id="teamModal" class="modal">
 
-    <div class="modal-content">
+```
+<div class="modal-content">
 
-        <span class="close"
-        onclick="closeTeam()">&times;</span>
+    <span class="close" onclick="closeTeam()">
+        &times;
+    </span>
 
-        <div id="teamContent">
-
-        </div>
+    <div id="teamContent">
 
     </div>
 
 </div>
+```
+
+</div>
+<!-- =========================
+WEATHER
+========================= -->
+
+<section id="weather" class="weather">
+
+```
+<h2>Tournament Weather</h2>
+
+<div class="weather-grid">
+
+    <div class="weather-card">
+
+        <h3>Monday</h3>
+
+        <div class="weather-icon">
+            ☀️
+        </div>
+
+        <p>Day 1</p>
+
+        <span>
+            22°C
+        </span>
+
+    </div>
+
+    <div class="weather-card">
+
+        <h3>Wednesday</h3>
+
+        <div class="weather-icon">
+            ⛅
+        </div>
+
+        <p>Day 2</p>
+
+        <span>
+            19°C
+        </span>
+
+    </div>
+
+    <div class="weather-card">
+
+        <h3>Friday</h3>
+
+        <div class="weather-icon">
+            🌤️
+        </div>
+
+        <p>Day 3</p>
+
+        <span>
+            18°C
+        </span>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================
+VENUE
+========================= -->
+
+<section id="venue" class="venue">
+
+```
+<h2>Venue Information</h2>
+
+<div class="venue-card">
+
+    <h3>
+        Bergsig Special School
+    </h3>
+
+    <p>
+        Kariega, Eastern Cape
+    </p>
+
+    <p>
+        Host venue of the SA U18 Academy Week 2026.
+    </p>
+
+    <p>
+        All teams are requested to report to the
+        technical table before their scheduled fixtures.
+    </p>
+
+</div>
+```
+
+</section>
 
 <!-- =========================
 FOOTER
@@ -407,15 +492,19 @@ FOOTER
 
 <footer>
 
-    <h3>SA U18 Academy Week 2026</h3>
+```
+<h3>
+    SA U18 Academy Week 2026
+</h3>
 
-    <p>
-        Bergsig Special School • Kariega
-    </p>
+<p>
+    Bergsig Special School • Kariega
+</p>
 
-    <p>
-        Official Tournament Website
-    </p>
+<p>
+    Official Tournament Website
+</p>
+```
 
 </footer>
 
