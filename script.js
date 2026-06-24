@@ -17,106 +17,121 @@ function showDay(dayId, button){
     button.classList.add("active");
 }
 
-
 /* ==========================
-   COUNTDOWN TIMER
+   TEAM DATA
 ========================== */
 
-const tournamentDate = new Date("July 6, 2026 08:30:00").getTime();
+const teams = {
 
-function updateCountdown(){
+    lions: {
+        name: "Lions",
+        coach: "Mashudu Raphunga",
+        manager: "Andrew Barnes",
+        players: [
+            "Joshua Hammann",
+            "Mahlatse Memeza",
+            "Jordan Venter",
+            "Matthew Van Deventer",
+            "MC Van Tonder",
+            "Llewelyn Vermaak",
+            "Naledi Phiri",
+            "Ryno Van Der Westhuizen",
+            "Lethabo Malahlela",
+            "Cameron Kourie"
+        ]
+    },
 
-    const now = new Date().getTime();
+    bulls: {
+        name: "Blue Bulls",
+        coach: "TBC",
+        manager: "TBC",
+        players: [
+            "Squad To Be Added"
+        ]
+    },
 
-    const difference = tournamentDate - now;
+    wp: {
+        name: "Western Province",
+        coach: "TBC",
+        manager: "TBC",
+        players: [
+            "Squad To Be Added"
+        ]
+    },
 
-    if(difference < 0){
-
-        document.getElementById("days").innerHTML = "00";
-        document.getElementById("hours").innerHTML = "00";
-        document.getElementById("minutes").innerHTML = "00";
-
-        return;
+    pumas: {
+        name: "Pumas",
+        coach: "TBC",
+        manager: "TBC",
+        players: [
+            "Squad To Be Added"
+        ]
     }
 
-    const days = Math.floor(
-        difference / (1000 * 60 * 60 * 24)
-    );
-
-    const hours = Math.floor(
-        (difference % (1000 * 60 * 60 * 24))
-        /
-        (1000 * 60 * 60)
-    );
-
-    const minutes = Math.floor(
-        (difference % (1000 * 60 * 60))
-        /
-        (1000 * 60)
-    );
-
-    document.getElementById("days").innerHTML =
-        String(days).padStart(2, "0");
-
-    document.getElementById("hours").innerHTML =
-        String(hours).padStart(2, "0");
-
-    document.getElementById("minutes").innerHTML =
-        String(minutes).padStart(2, "0");
-}
-
-updateCountdown();
-
-setInterval(updateCountdown, 1000);
-
+};
 
 /* ==========================
-   SCROLL ANIMATION
+   OPEN TEAM
 ========================== */
 
-const observer = new IntersectionObserver(entries => {
+function openTeam(team){
 
-    entries.forEach(entry => {
+    const t = teams[team];
 
-        if(entry.isIntersecting){
+    let playerList = "";
 
-            entry.target.classList.add("show");
+    t.players.forEach(player => {
 
-        }
+        playerList += `<li>${player}</li>`;
 
     });
 
-},{
-    threshold:0.15
-});
+    document.getElementById("teamContent").innerHTML = `
 
-document.querySelectorAll(
-    ".stat-card, .weather-card, .fixture-card, .team-card, .venue-card"
-).forEach(el => {
+        <h2>${t.name}</h2>
 
-    observer.observe(el);
+        <br>
 
-});
+        <p><strong>Coach:</strong> ${t.coach}</p>
 
+        <p><strong>Manager:</strong> ${t.manager}</p>
+
+        <br>
+
+        <h3>Squad</h3>
+
+        <ul>
+            ${playerList}
+        </ul>
+
+    `;
+
+    document.getElementById("teamModal").style.display = "block";
+
+}
 
 /* ==========================
-   NAVBAR SHADOW
+   CLOSE TEAM
 ========================== */
 
-window.addEventListener("scroll", () => {
+function closeTeam(){
 
-    const navbar = document.querySelector(".navbar");
+    document.getElementById("teamModal").style.display = "none";
 
-    if(window.scrollY > 50){
+}
 
-        navbar.style.boxShadow =
-            "0 6px 20px rgba(0,0,0,.25)";
+/* ==========================
+   CLOSE IF CLICK OUTSIDE
+========================== */
 
-    }else{
+window.onclick = function(event){
 
-        navbar.style.boxShadow =
-            "0 4px 15px rgba(0,0,0,.15)";
+    const modal = document.getElementById("teamModal");
+
+    if(event.target === modal){
+
+        modal.style.display = "none";
 
     }
 
-});
+}
