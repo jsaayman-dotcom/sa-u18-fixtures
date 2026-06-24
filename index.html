@@ -6,14 +6,12 @@
 
 <title>SA U18 Academy Week 2026</title>
 
-<meta name="description" content="Official SA U18 Academy Week 2026 Tournament Website">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="css/style.css">
+
 <body>
 
 <!-- =========================
@@ -23,7 +21,7 @@
 <nav class="navbar">
 
     <div class="logo">
-        SA U18 Academy Week
+        SA U18 Academy Week 2026
     </div>
 
     <ul class="nav-links">
@@ -41,112 +39,23 @@
 
 <section class="hero">
 
-    <div class="hero-overlay"></div>
+    <div class="overlay"></div>
 
     <div class="hero-content">
 
-        <div class="hero-badge">
-            OFFICIAL TOURNAMENT WEBSITE
-        </div>
-
         <h1>SA U18 Academy Week 2026</h1>
 
-        <p>Bergsig Special School • Kariega</p>
+        <p>
+            Bergsig Special School • Kariega
+        </p>
 
         <div class="hero-date">
-            6 - 10 July 2026
+            6 – 10 July 2026
         </div>
 
-        <div id="countdown" class="countdown">
-
-            <div class="count-box">
-                <span id="days">00</span>
-                <small>Days</small>
-            </div>
-
-            <div class="count-box">
-                <span id="hours">00</span>
-                <small>Hours</small>
-            </div>
-
-            <div class="count-box">
-                <span id="minutes">00</span>
-                <small>Minutes</small>
-            </div>
-
-        </div>
-
-        <div class="hero-buttons">
-
-            <a href="#fixtures" class="btn-primary">
-                View Fixtures
-            </a>
-
-            <a href="#teams" class="btn-secondary">
-                View Teams
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================
-     TOURNAMENT STATS
-========================= -->
-
-<section class="stats">
-
-    <div class="stat-card">
-        <h2>20</h2>
-        <p>Teams</p>
-    </div>
-
-    <div class="stat-card">
-        <h2>460+</h2>
-        <p>Players</p>
-    </div>
-
-    <div class="stat-card">
-        <h2>17</h2>
-        <p>Matches</p>
-    </div>
-
-    <div class="stat-card">
-        <h2>3</h2>
-        <p>Days</p>
-    </div>
-
-</section>
-
-<!-- =========================
-     WEATHER
-========================= -->
-
-<section id="weather" class="weather">
-
-    <h2>Tournament Weather</h2>
-
-    <div class="weather-grid">
-
-        <div class="weather-card">
-            <h3>Monday</h3>
-            <p>☀️ 22°C</p>
-            <span>Partly Cloudy</span>
-        </div>
-
-        <div class="weather-card">
-            <h3>Wednesday</h3>
-            <p>🌤️ 20°C</p>
-            <span>Sunny</span>
-        </div>
-
-        <div class="weather-card">
-            <h3>Friday</h3>
-            <p>⛅ 19°C</p>
-            <span>Cloudy</span>
-        </div>
+        <a href="#fixtures" class="hero-btn">
+            View Fixtures
+        </a>
 
     </div>
 
@@ -162,15 +71,18 @@
 
     <div class="tabs">
 
-        <button class="tab-btn active" onclick="showDay('day1', this)">
+        <button class="tab-btn active"
+        onclick="showDay('day1', this)">
             Day 1
         </button>
 
-        <button class="tab-btn" onclick="showDay('day2', this)">
+        <button class="tab-btn"
+        onclick="showDay('day2', this)">
             Day 2
         </button>
 
-        <button class="tab-btn" onclick="showDay('day3', this)">
+        <button class="tab-btn"
+        onclick="showDay('day3', this)">
             Day 3
         </button>
 
@@ -178,329 +90,71 @@
 
     <!-- DAY 1 -->
 
-<div id="day1" class="day active">
+    <div id="day1" class="day active">
 
-    <!-- MATCH 1 -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Match 1 • Monday 6 July 2026 • 08:30 - 09:45
+        <div class="fixture-card">
+            <h3>08:30 • A Field</h3>
+            <p>Border vs Pumas</p>
         </div>
 
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/border.png" alt="Border">
-                <h3>Border</h3>
-            </div>
-
-            <div class="vs">VS</div>
-
-            <div class="team">
-                <img src="images/teams/pumas.png" alt="Pumas">
-                <h3>Pumas</h3>
-            </div>
-
+        <div class="fixture-card">
+            <h3>08:30 • B Field</h3>
+            <p>Border CD vs Griquas</p>
         </div>
 
-        <div class="match-info">
-            A Field
+        <div class="fixture-card">
+            <h3>09:50 • A Field</h3>
+            <p>Free State vs Griffons</p>
         </div>
 
-    </div>
-
-    <!-- MATCH 1B -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Match 1 • Monday 6 July 2026 • 08:30 - 09:45
+        <div class="fixture-card">
+            <h3>09:50 • B Field</h3>
+            <p>SA LSEN vs Leopards</p>
         </div>
 
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/border-country.png" alt="Border Country Districts">
-                <h3>Border CD</h3>
-            </div>
-
-            <div class="vs">VS</div>
-
-            <div class="team">
-                <img src="images/teams/griquas.png" alt="Griquas">
-                <h3>Griquas</h3>
-            </div>
-
+        <div class="fixture-card">
+            <h3>11:10 • A Field</h3>
+            <p>Lions XV vs Boland</p>
         </div>
 
-        <div class="match-info">
-            B Field
+        <div class="fixture-card">
+            <h3>11:10 • B Field</h3>
+            <p>Limpopo vs Namibia</p>
+        </div>
+
+        <div class="fixture-card">
+            <h3>12:30 • A Field</h3>
+            <p>SWD vs Blue Bulls</p>
+        </div>
+
+        <div class="fixture-card">
+            <h3>12:30 • B Field</h3>
+            <p>Valke vs Zimbabwe</p>
+        </div>
+
+        <div class="fixture-card">
+            <h3>13:50 • A Field</h3>
+            <p>Western Province vs Sharks</p>
+        </div>
+
+        <div class="fixture-card special">
+            <h3>Opening Ceremony</h3>
+        </div>
+
+        <div class="fixture-card">
+            <h3>16:00 • A Field</h3>
+            <p>Lions vs Eastern Province</p>
         </div>
 
     </div>
-
-    <!-- MATCH 2 -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Match 2 • 09:50 - 11:05
-        </div>
-
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/free-state.png" alt="Free State">
-                <h3>Free State</h3>
-            </div>
-
-            <div class="vs">VS</div>
-
-            <div class="team">
-                <img src="images/teams/griffons.png" alt="Griffons">
-                <h3>Griffons</h3>
-            </div>
-
-        </div>
-
-        <div class="match-info">
-            A Field
-        </div>
-
-    </div>
-
-    <!-- MATCH 2B -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Match 2 • 09:50 - 11:05
-        </div>
-
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/lsen.png" alt="SA LSEN">
-                <h3>SA LSEN</h3>
-            </div>
-
-            <div class="vs">VS</div>
-
-            <div class="team">
-                <img src="images/teams/leopards.png" alt="Leopards">
-                <h3>Leopards</h3>
-            </div>
-
-        </div>
-
-        <div class="match-info">
-            B Field
-        </div>
-
-    </div>
-
-    <!-- MATCH 3 -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Match 3 • 11:10 - 12:25
-        </div>
-
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/lions.png" alt="Lions">
-                <h3>Lions XV</h3>
-            </div>
-
-            <div class="vs">VS</div>
-
-            <div class="team">
-                <img src="images/teams/boland.png" alt="Boland">
-                <h3>Boland</h3>
-            </div>
-
-        </div>
-
-        <div class="match-info">
-            A Field
-        </div>
-
-    </div>
-
-    <!-- MATCH 3B -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Match 3 • 11:10 - 12:25
-        </div>
-
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/limpopo.png" alt="Limpopo">
-                <h3>Limpopo</h3>
-            </div>
-
-            <div class="vs">VS</div>
-
-            <div class="team">
-                <img src="images/teams/namibia.png" alt="Namibia">
-                <h3>Namibia</h3>
-            </div>
-
-        </div>
-
-        <div class="match-info">
-            B Field
-        </div>
-
-    </div>
-
-    <!-- MATCH 4 -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Match 4 • 12:30 - 13:45
-        </div>
-
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/swd.png" alt="SWD">
-                <h3>SWD</h3>
-            </div>
-
-            <div class="vs">VS</div>
-
-            <div class="team">
-                <img src="images/teams/bulls.png" alt="Blue Bulls">
-                <h3>Blue Bulls</h3>
-            </div>
-
-        </div>
-
-        <div class="match-info">
-            A Field
-        </div>
-
-    </div>
-
-    <!-- MATCH 4B -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Match 4 • 12:30 - 13:45
-        </div>
-
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/valke.png" alt="Valke">
-                <h3>Valke</h3>
-            </div>
-
-            <div class="vs">VS</div>
-
-            <div class="team">
-                <img src="images/teams/zimbabwe.png" alt="Zimbabwe">
-                <h3>Zimbabwe</h3>
-            </div>
-
-        </div>
-
-        <div class="match-info">
-            B Field
-        </div>
-
-    </div>
-
-    <!-- MATCH 5 -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Match 5 • 13:50 - 15:05
-        </div>
-
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/wp.png" alt="Western Province">
-                <h3>Western Province</h3>
-            </div>
-
-            <div class="vs">VS</div>
-
-            <div class="team">
-                <img src="images/teams/sharks.png" alt="Sharks">
-                <h3>Sharks</h3>
-            </div>
-
-        </div>
-
-        <div class="match-info">
-            A Field
-        </div>
-
-    </div>
-
-    <!-- OPENING CEREMONY -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Opening Ceremony
-        </div>
-
-        <div class="match-info">
-            Official SA U18 Academy Week Opening Ceremony
-        </div>
-
-    </div>
-
-    <!-- MATCH 6 -->
-
-    <div class="fixture-card">
-
-        <div class="fixture-header">
-            Match 6 • 16:00 - 17:15
-        </div>
-
-        <div class="match-row">
-
-            <div class="team">
-                <img src="images/teams/lions.png" alt="Lions">
-                <h3>Lions</h3>
-            </div>
-
-            <div class="vs">VS</div>
-
-            <div class="team">
-                <img src="images/teams/ep.png" alt="Eastern Province">
-                <h3>Eastern Province</h3>
-            </div>
-
-        </div>
-
-        <div class="match-info">
-            A Field
-        </div>
-
-    </div>
-
-</div>
 
     <!-- DAY 2 -->
 
     <div id="day2" class="day">
 
-        <!-- ALL DAY 2 FIXTURES GO HERE -->
+        <div class="fixture-card">
+            <h3>Fixtures To Be Confirmed</h3>
+        </div>
 
     </div>
 
@@ -508,108 +162,10 @@
 
     <div id="day3" class="day">
 
-        <!-- ALL DAY 3 FIXTURES GO HERE -->
+        <div class="fixture-card">
+            <h3>Fixtures To Be Confirmed</h3>
+        </div>
 
     </div>
 
 </section>
-
-<!-- =========================
-     TEAMS
-========================= -->
-
-<section id="teams" class="teams">
-
-    <h2>Participating Teams</h2>
-
-    <div class="team-grid">
-
-        <a href="teams/lions.html" class="team-card">
-            <img src="images/teams/lions.png" alt="Lions">
-            <h3>Lions</h3>
-        </a>
-
-        <a href="teams/bulls.html" class="team-card">
-            <img src="images/teams/bulls.png" alt="Blue Bulls">
-            <h3>Blue Bulls</h3>
-        </a>
-
-        <a href="teams/wp.html" class="team-card">
-            <img src="images/teams/wp.png" alt="Western Province">
-            <h3>Western Province</h3>
-        </a>
-
-        <a href="teams/pumas.html" class="team-card">
-            <img src="images/teams/pumas.png" alt="Pumas">
-            <h3>Pumas</h3>
-        </a>
-
-        <!-- ADD REMAINING TEAMS -->
-
-    </div>
-
-</section>
-
-<!-- =========================
-     VENUE
-========================= -->
-
-<section id="venue" class="venue">
-
-    <h2>Venue Information</h2>
-
-    <div class="venue-card">
-
-        <h3>Bergsig Special School</h3>
-
-        <p>Kariega, Eastern Cape</p>
-
-        <p>
-            Host venue of the SA U18 Academy Week 2026.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- =========================
-     NOTICE
-========================= -->
-
-<section class="notice">
-
-    <h2>Important Notice</h2>
-
-    <p>
-        All matches must start on time. Team managers are requested to ensure that players are at the field five minutes before kick-off. Team sheets must be submitted to the technical table before the start of play.
-    </p>
-
-</section>
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-    <div class="footer-content">
-
-        <h3>SA U18 Academy Week 2026</h3>
-
-        <p>
-            Bergsig Special School • Kariega
-        </p>
-
-        <p>
-            Official Tournament Website
-        </p>
-
-    </div>
-
-</footer>
-
-<script src="js/script.js"></script>
-
-</body>
-     <script src="js/script.js"></script>
-</html>
