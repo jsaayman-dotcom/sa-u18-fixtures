@@ -24,22 +24,38 @@ function showDay(dayId, button){
 const teams = {
 
     lions: {
-        name: "Lions",
-        coach: "Mashudu Raphunga",
-        manager: "Andrew Barnes",
-        players: [
-            "Joshua Hammann",
-            "Mahlatse Memeza",
-            "Jordan Venter",
-            "Matthew Van Deventer",
-            "MC Van Tonder",
-            "Llewelyn Vermaak",
-            "Naledi Phiri",
-            "Ryno Van Der Westhuizen",
-            "Lethabo Malahlela",
-            "Cameron Kourie"
-        ]
-    },
+    name: "Lions",
+    coach: "Mashudu Raphunga",
+    manager: "Andrew Barnes",
+
+    players: [
+
+        {
+            no: 1,
+            name: "Joshua Hammann",
+            school: "Jeppe"
+        },
+
+        {
+            no: 2,
+            name: "Mahlatse Memeza",
+            school: "Jeppe"
+        },
+
+        {
+            no: 3,
+            name: "Jordan Venter",
+            school: "Northcliff"
+        },
+
+        {
+            no: 4,
+            name: "Matthew Van Deventer",
+            school: "Monument"
+        }
+
+    ]
+}
 
     bulls: {
         name: "Blue Bulls",
@@ -78,11 +94,75 @@ function openTeam(team){
 
     const t = teams[team];
 
-    let playerList = "";
+    let rows = "";
 
     t.players.forEach(player => {
 
-        playerList += `<li>${player}</li>`;
+        rows += `
+            <tr>
+                <td>${player.no || ""}</td>
+                <td>${player.name || ""}</td>
+                <td>${player.position || ""}</td>
+                <td>${player.school || ""}</td>
+                <td>${player.height || ""}</td>
+                <td>${player.weight || ""}</td>
+                <td>${player.age || ""}</td>
+            </tr>
+        `;
+
+    });
+
+    document.getElementById("teamContent").innerHTML = `
+
+        <div class="team-header">
+
+            <h2>${t.name}</h2>
+
+            <div class="team-info">
+
+                <div class="info-box">
+                    <strong>Coach</strong><br>
+                    ${t.coach}
+                </div>
+
+                <div class="info-box">
+                    <strong>Manager</strong><br>
+                    ${t.manager}
+                </div>
+
+            </div>
+
+        </div>
+
+        <table class="player-table">
+
+            <thead>
+
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>School</th>
+                    <th>Height</th>
+                    <th>Weight</th>
+                    <th>Age</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                ${rows}
+
+            </tbody>
+
+        </table>
+
+    `;
+
+    document.getElementById("teamModal").style.display = "block";
+
+}
 
     });
 
