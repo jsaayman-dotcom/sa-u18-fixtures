@@ -423,3 +423,84 @@ footer{
         margin-top:-30px;
     }
 }
+/* HERO UPGRADE */
+
+.hero-badge{
+    display:inline-block;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    color:white;
+
+    margin-bottom:20px;
+
+    font-size:.9rem;
+
+    letter-spacing:1px;
+}
+
+.hero-location{
+    font-size:1.3rem;
+    margin-bottom:20px;
+}
+
+.hero-date{
+    display:inline-block;
+
+    background:#f4b400;
+
+    color:#002b5c;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#f4b400;
+    color:#002b5c;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:#002b5c;
+}
