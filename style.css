@@ -1,6 +1,6 @@
-/* ======================
+/* ==========================
    GLOBAL
-====================== */
+========================== */
 
 *{
     margin:0;
@@ -23,12 +23,28 @@ img{
     display:block;
 }
 
-/* ======================
+section{
+    padding:80px 8%;
+}
+
+h2{
+    text-align:center;
+    font-size:2.5rem;
+    color:#001f4d;
+    margin-bottom:40px;
+}
+
+/* ==========================
    NAVBAR
-====================== */
+========================== */
 
 .navbar{
-    background:#002B5C;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    background:#001f4d;
 
     display:flex;
     justify-content:space-between;
@@ -36,171 +52,151 @@ img{
 
     padding:20px 8%;
 
-    position:sticky;
-    top:0;
-    z-index:1000;
+    z-index:999;
 }
 
 .logo{
     color:white;
-    font-size:1.2rem;
+    font-size:1.4rem;
     font-weight:700;
 }
 
-.nav-links{
-    list-style:none;
+.navbar ul{
     display:flex;
-    gap:25px;
+    gap:30px;
+    list-style:none;
 }
 
-.nav-links a{
-    color:white;
+.navbar a{
     text-decoration:none;
+    color:white;
+    font-weight:500;
 }
 
-/* ======================
+.navbar a:hover{
+    color:#ffc107;
+}
+
+/* ==========================
    HERO
-====================== */
+========================== */
 
 .hero{
-    height:75vh;
+
+    height:100vh;
 
     background:
     linear-gradient(
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.55)
-    ),
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
     url("images/hero-bg.jpg");
 
     background-size:cover;
     background-position:center;
 
     display:flex;
-    justify-content:center;
     align-items:center;
 
-    text-align:center;
+    padding-left:8%;
+}
 
+.hero-content{
     color:white;
+    max-width:700px;
 }
 
-.hero-content h1{
-    font-size:4rem;
-    margin-bottom:15px;
+.hero h1{
+    font-size:5rem;
+    line-height:1;
+    margin-bottom:25px;
 }
 
-.hero-content p{
-    font-size:1.2rem;
+.hero p{
+    font-size:1.4rem;
     margin-bottom:20px;
 }
 
-.hero-date{
+.date{
     display:inline-block;
 
-    background:#F4B400;
+    background:#ffc107;
 
-    color:#002B5C;
-
-    padding:10px 25px;
-
-    border-radius:30px;
-
-    font-weight:700;
-
-    margin-bottom:30px;
-}
-
-.hero-btn{
-    display:inline-block;
-
-    background:white;
-
-    color:#002B5C;
-
-    padding:15px 30px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    font-weight:600;
-}
-
-/* ======================
-   SECTIONS
-====================== */
-
-section{
-    padding:80px 8%;
-}
-
-section h2{
-    text-align:center;
-    margin-bottom:40px;
-    color:#002B5C;
-}
-
-/* ======================
-   FIXTURES
-====================== */
-
-.tabs{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin-bottom:30px;
-}
-
-.tab-btn{
-    border:none;
+    color:#001f4d;
 
     padding:12px 25px;
 
-    border-radius:30px;
+    border-radius:40px;
 
+    font-weight:700;
+
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+
+    background:#ffc107;
+
+    color:#001f4d;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    margin-top:20px;
+}
+
+.btn:hover{
     background:white;
-
-    cursor:pointer;
-
-    font-weight:600;
-
-    box-shadow:0 3px 10px rgba(0,0,0,.1);
 }
 
-.tab-btn.active{
-    background:#002B5C;
-    color:white;
+/* ==========================
+   FIXTURES
+========================== */
+
+.fixtures{
+    background:white;
 }
 
-.day{
-    display:none;
-}
-
-.day.active{
-    display:block;
+.fixture-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
 }
 
 .fixture-card{
+
     background:white;
-
-    padding:20px;
-
-    margin-bottom:15px;
 
     border-radius:15px;
 
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    padding:20px;
+
+    border-left:5px solid #001f4d;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
 }
 
-.special{
-    background:#F4B400;
+.fixture-card strong{
+    color:#001f4d;
 }
 
-/* ======================
+/* ==========================
    TEAMS
-====================== */
+========================== */
+
+.teams{
+    background:#f5f7fa;
+}
 
 .team-grid{
+
     display:grid;
 
     grid-template-columns:
@@ -210,157 +206,115 @@ section h2{
 }
 
 .team-card{
+
     background:white;
+
+    border-radius:15px;
 
     padding:20px;
 
-    border-radius:20px;
-
     text-align:center;
 
-    cursor:pointer;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
-
     transition:.3s;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
 }
 
 .team-card:hover{
-    transform:translateY(-5px);
+
+    transform:translateY(-8px);
+
+    cursor:pointer;
 }
 
 .team-card img{
-    height:90px;
+
+    height:100px;
+
     width:100%;
+
     object-fit:contain;
+
     margin-bottom:10px;
 }
 
 .team-card p{
+
     font-weight:600;
-    color:#002B5C;
+
+    color:#001f4d;
 }
 
-/* ======================
-   WEATHER
-====================== */
-
-.weather-grid{
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
-
-    gap:20px;
-}
-
-.weather-card{
-    background:white;
-
-    padding:25px;
-
-    text-align:center;
-
-    border-radius:15px;
-
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-}
-
-/* ======================
+/* ==========================
    VENUE
-====================== */
+========================== */
 
 .venue-card{
+
     background:white;
 
-    padding:30px;
-
-    text-align:center;
+    padding:40px;
 
     border-radius:15px;
 
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    text-align:center;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
 }
 
-/* ======================
-   MODAL
-====================== */
-
-.modal{
-    display:none;
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,.75);
-
-    z-index:9999;
+.venue-card h3{
+    color:#001f4d;
+    margin-bottom:10px;
 }
 
-.modal-content{
-    background:white;
-
-    width:90%;
-    max-width:700px;
-
-    margin:50px auto;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    position:relative;
-
-    max-height:80vh;
-
-    overflow-y:auto;
-}
-
-.close{
-    position:absolute;
-    right:20px;
-    top:10px;
-
-    font-size:2rem;
-
-    cursor:pointer;
-}
-
-/* ======================
+/* ==========================
    FOOTER
-====================== */
+========================== */
 
 footer{
-    background:#002B5C;
+
+    background:#001f4d;
 
     color:white;
 
     text-align:center;
 
-    padding:40px 20px;
+    padding:35px;
 }
 
-/* ======================
+/* ==========================
    MOBILE
-====================== */
+========================== */
 
 @media(max-width:768px){
 
     .navbar{
+
         flex-direction:column;
+
         gap:15px;
     }
 
-    .hero-content h1{
-        font-size:2.5rem;
+    .hero{
+
+        text-align:center;
+
+        justify-content:center;
+
+        padding:20px;
     }
 
-    .nav-links{
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .navbar ul{
         flex-wrap:wrap;
         justify-content:center;
     }
