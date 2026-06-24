@@ -1,876 +1,425 @@
-/* ==========================
-GLOBAL
-========================== */
+/* =========================
+   GLOBAL
+========================= */
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-
-```
-font-family:'Poppins',sans-serif;
-
-background:#f5f7fa;
-
-color:#222;
-
-line-height:1.6;
-```
-
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fa;
+    color:#222;
+    line-height:1.6;
 }
 
-img{
-
-```
-max-width:100%;
-
-display:block;
-```
-
-}
-
-section{
-
-```
-padding:80px 8%;
-```
-
-}
-
-.section-header{
-
-```
-text-align:center;
-
-margin-bottom:40px;
-```
-
-}
-
-.section-header h2{
-
-```
-color:#0B5D1E;
-
-font-size:2.5rem;
-
-margin-bottom:10px;
-```
-
-}
-
-.section-header p{
-
-```
-color:#666;
-```
-
-}
-
-/* ==========================
-NAVBAR
-========================== */
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
 
-```
-position:fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-top:0;
-left:0;
+    padding:18px 8%;
 
-width:100%;
-
-background:#0B5D1E;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:18px 8%;
-
-z-index:9999;
-
-box-shadow:
-0 4px 15px rgba(0,0,0,.15);
-```
-
+    background:#002b5c;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
 }
 
 .logo{
-
-```
-color:white;
-
-font-weight:700;
-
-font-size:1.2rem;
-```
-
+    color:white;
+    font-size:1.2rem;
+    font-weight:700;
 }
 
 .nav-links{
-
-```
-list-style:none;
-
-display:flex;
-
-gap:30px;
-```
-
+    display:flex;
+    gap:30px;
+    list-style:none;
 }
 
 .nav-links a{
-
-```
-text-decoration:none;
-
-color:white;
-
-font-weight:500;
-
-transition:.3s;
-```
-
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
 }
 
 .nav-links a:hover{
-
-```
-color:#F4C430;
-```
-
+    color:#f4b400;
 }
 
-/* ==========================
-HERO
-========================== */
+/* =========================
+   HERO
+========================= */
 
 .hero{
+    position:relative;
+    min-height:70vh;
 
-```
-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 
-background:
-linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)
-),
-url("images/hero-bg.jpg");
+    background:url("../images/hero-bg.jpg") center center/cover;
+}
 
-background-size:cover;
-
-background-position:center;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-color:white;
-```
-
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,20,50,.65);
 }
 
 .hero-content{
-
-```
-max-width:850px;
-```
-
+    position:relative;
+    z-index:2;
+    color:white;
+    padding:20px;
 }
 
-.springbok-logo{
-
-```
-width:110px;
-
-margin:0 auto 20px;
-```
-
+.hero-content h1{
+    font-size:4rem;
+    font-weight:700;
+    margin-bottom:15px;
 }
 
-.hero h1{
-
-```
-font-size:5rem;
-
-margin-bottom:20px;
-```
-
+.hero-content p{
+    font-size:1.3rem;
+    margin-bottom:10px;
 }
 
-.hero p{
+.hero-content span{
+    display:inline-block;
 
-```
-font-size:1.3rem;
+    background:#f4b400;
+    color:#002b5c;
 
-margin-bottom:20px;
-```
+    padding:10px 20px;
+    border-radius:30px;
 
+    font-weight:600;
 }
 
-.hero-date{
+/* =========================
+   STATS
+========================= */
 
-```
-display:inline-block;
+.stats{
+    max-width:1200px;
+    margin:-60px auto 60px;
 
-background:#F4C430;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 
-color:#0B5D1E;
-
-padding:12px 25px;
-
-border-radius:40px;
-
-font-weight:700;
-
-margin-bottom:25px;
-```
-
+    padding:0 20px;
+    position:relative;
+    z-index:10;
 }
 
-.hero-btn{
+.stat-card{
+    background:white;
+    border-radius:18px;
 
-```
-display:inline-block;
+    padding:30px;
+    text-align:center;
 
-text-decoration:none;
-
-background:white;
-
-color:#0B5D1E;
-
-padding:15px 35px;
-
-border-radius:50px;
-
-font-weight:700;
-```
-
-}
-/* ==========================
-FIXTURES
-========================== */
-
-.fixtures{
-
-```
-background:white;
-```
-
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
-.tabs{
-
-```
-display:flex;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-gap:15px;
-
-margin-bottom:35px;
-```
-
+.stat-card h2{
+    color:#002b5c;
+    font-size:2.5rem;
 }
 
-.tab-btn{
-
-```
-border:none;
-
-background:#e9edf2;
-
-padding:12px 30px;
-
-border-radius:40px;
-
-cursor:pointer;
-
-font-weight:600;
-
-transition:.3s;
-```
-
+.stat-card p{
+    margin-top:10px;
+    color:#666;
 }
 
-.tab-btn:hover{
-
-```
-transform:translateY(-2px);
-```
-
-}
-
-.tab-btn.active{
-
-```
-background:#0B5D1E;
-
-color:white;
-```
-
-}
-
-.day{
-
-```
-display:none;
-```
-
-}
-
-.day.active{
-
-```
-display:block;
-```
-
-}
-
-.fixture-table{
-
-```
-width:100%;
-
-border-collapse:collapse;
-
-overflow:hidden;
-
-border-radius:20px;
-
-background:white;
-
-box-shadow:
-0 10px 30px rgba(0,0,0,.08);
-```
-
-}
-
-.fixture-table th{
-
-```
-background:#0B5D1E;
-
-color:white;
-
-padding:18px;
-
-text-align:left;
-```
-
-}
-
-.fixture-table td{
-
-```
-padding:16px;
-
-border-bottom:1px solid #eee;
-```
-
-}
-
-.fixture-table tr:hover{
-
-```
-background:#f7f9fc;
-```
-
-}
-
-.opening-row{
-
-```
-background:#fff3cd;
-
-font-weight:700;
-```
-
-}
-
-.coming-soon{
-
-```
-background:white;
-
-padding:50px;
-
-text-align:center;
-
-border-radius:20px;
-
-box-shadow:
-0 10px 30px rgba(0,0,0,.08);
-```
-
-}
-
-/* ==========================
-TEAMS
-========================== */
-
-.teams{
-
-```
-background:#f5f7fa;
-```
-
-}
-
-.team-grid{
-
-```
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(180px,1fr));
-
-gap:25px;
-```
-
-}
-
-.team-card{
-
-```
-background:white;
-
-border-radius:20px;
-
-padding:20px;
-
-text-align:center;
-
-cursor:pointer;
-
-transition:.3s;
-
-box-shadow:
-0 8px 20px rgba(0,0,0,.08);
-```
-
-}
-
-.team-card:hover{
-
-```
-transform:translateY(-8px);
-
-box-shadow:
-0 15px 35px rgba(0,0,0,.15);
-```
-
-}
-
-.team-card img{
-
-```
-width:100%;
-
-height:90px;
-
-object-fit:contain;
-
-margin-bottom:15px;
-```
-
-}
-
-.team-card span{
-
-```
-display:block;
-
-color:#0B5D1E;
-
-font-weight:600;
-```
-
-}
-/* ==========================
-WEATHER
-========================== */
+/* =========================
+   WEATHER
+========================= */
 
 .weather{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
 
-```
-background:white;
-```
-
+.weather h2{
+    text-align:center;
+    color:#002b5c;
+    margin-bottom:30px;
 }
 
 .weather-grid{
-
-```
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-
-gap:25px;
-```
-
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 .weather-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
 
-```
-background:white;
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
 
-padding:30px;
-
-border-radius:20px;
-
-text-align:center;
-
-box-shadow:
-0 10px 25px rgba(0,0,0,.08);
-
-transition:.3s;
-```
-
+    transition:.3s;
 }
 
 .weather-card:hover{
-
-```
-transform:translateY(-5px);
-```
-
+    transform:translateY(-5px);
 }
 
-.weather-icon{
-
-```
-font-size:3rem;
-
-margin:15px 0;
-```
-
+.weather-card h3{
+    color:#002b5c;
 }
 
-.weather-card span{
-
-```
-display:block;
-
-margin-top:10px;
-
-color:#0B5D1E;
-
-font-weight:700;
-```
-
+.weather-card p{
+    font-size:2rem;
+    margin:15px 0;
 }
 
-/* ==========================
-VENUE
-========================== */
+/* =========================
+   FIXTURES
+========================= */
+
+.fixtures{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.fixtures h2{
+    text-align:center;
+    color:#002b5c;
+    margin-bottom:30px;
+}
+
+.tabs{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.tab-btn{
+    border:none;
+    background:white;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.tab-btn.active{
+    background:#002b5c;
+    color:white;
+}
+
+.day{
+    display:none;
+}
+
+.day.active{
+    display:block;
+}
+
+.fixture-card{
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+    margin-bottom:20px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.fixture-card:hover{
+    transform:translateY(-4px);
+}
+
+.fixture-header{
+    color:#002b5c;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.field{
+    margin:10px 0;
+}
+
+.opening{
+    background:#fff9e6;
+    border-left:6px solid #f4b400;
+}
+
+/* =========================
+   TEAMS
+========================= */
+
+.teams{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.teams h2{
+    text-align:center;
+    color:#002b5c;
+    margin-bottom:30px;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.team-card{
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    text-decoration:none;
+    color:#222;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.team-card:hover{
+    transform:translateY(-8px);
+}
+
+.team-card img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.team-card h3{
+    color:#002b5c;
+}
+
+/* =========================
+   VENUE
+========================= */
 
 .venue{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
 
-```
-background:#f5f7fa;
-```
-
+.venue h2{
+    text-align:center;
+    color:#002b5c;
+    margin-bottom:30px;
 }
 
 .venue-card{
-
-```
-background:white;
-
-max-width:900px;
-
-margin:auto;
-
-padding:40px;
-
-border-radius:20px;
-
-text-align:center;
-
-box-shadow:
-0 10px 30px rgba(0,0,0,.08);
-```
-
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
-.venue-card h3{
+/* =========================
+   NOTICE
+========================= */
 
-```
-color:#0B5D1E;
-
-margin-bottom:15px;
-```
-
+.notice{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
 }
 
-/* ==========================
-TEAM MODAL
-========================== */
-
-.modal{
-
-```
-display:none;
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background:
-rgba(0,0,0,.75);
-
-z-index:10000;
-
-overflow-y:auto;
-```
-
+.notice h2{
+    color:#002b5c;
+    margin-bottom:20px;
 }
 
-.modal-content{
+.notice p{
+    background:white;
+    padding:25px;
+    border-radius:18px;
 
-```
-background:white;
-
-width:95%;
-
-max-width:1100px;
-
-margin:40px auto;
-
-padding:30px;
-
-border-radius:20px;
-
-position:relative;
-```
-
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
-.close{
-
-```
-position:absolute;
-
-right:20px;
-
-top:10px;
-
-font-size:2rem;
-
-cursor:pointer;
-
-color:#0B5D1E;
-```
-
-}
-
-.team-header{
-
-```
-text-align:center;
-
-margin-bottom:25px;
-```
-
-}
-
-.team-info{
-
-```
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-
-gap:15px;
-
-margin-bottom:25px;
-```
-
-}
-
-.info-box{
-
-```
-background:#f5f7fa;
-
-padding:15px;
-
-border-radius:12px;
-
-text-align:center;
-```
-
-}
-
-/* ==========================
-PLAYER TABLE
-========================== */
-
-.player-table{
-
-```
-width:100%;
-
-border-collapse:collapse;
-```
-
-}
-
-.player-table th{
-
-```
-background:#0B5D1E;
-
-color:white;
-
-padding:12px;
-```
-
-}
-
-.player-table td{
-
-```
-padding:12px;
-
-border-bottom:1px solid #e5e5e5;
-```
-
-}
-
-.player-table tr:nth-child(even){
-
-```
-background:#f8f8f8;
-```
-
-}
-
-/* ==========================
-FOOTER
-========================== */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
+    background:#002b5c;
+    color:white;
 
-```
-background:#0B5D1E;
+    text-align:center;
 
-color:white;
-
-text-align:center;
-
-padding:50px 20px;
-```
-
+    padding:30px;
+    margin-top:50px;
 }
 
-.footer-logo{
-
-```
-width:70px;
-
-margin:0 auto 15px;
-```
-
-}
-
-footer h3{
-
-```
-margin-bottom:10px;
-```
-
-}
-
-/* ==========================
-MOBILE
-========================== */
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:768px){
 
-```
-.navbar{
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
 
-    flex-direction:column;
+    .nav-links{
+        gap:15px;
+    }
 
-    gap:15px;
+    .hero-content h1{
+        font-size:2.3rem;
+    }
 
-}
+    .hero-content p{
+        font-size:1rem;
+    }
 
-.nav-links{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:15px;
-
-}
-
-.hero h1{
-
-    font-size:2.8rem;
-
-}
-
-.hero p{
-
-    font-size:1rem;
-
-}
-
-.springbok-logo{
-
-    width:80px;
-
-}
-
-.fixture-table{
-
-    font-size:.85rem;
-
-}
-
-.player-table{
-
-    display:block;
-
-    overflow-x:auto;
-
-    font-size:.8rem;
-
-}
-
-section{
-
-    padding:60px 5%;
-
-}
-```
-
+    .stats{
+        margin-top:-30px;
+    }
 }
