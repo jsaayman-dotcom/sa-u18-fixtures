@@ -5,22 +5,33 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SA U18 Academy Week 2026</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>
+SA U18 Academy Week 2026
+</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
 
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
 
 </head>
 
 <body>
 
 <!-- =========================
-NAVIGATION
+NAVBAR
 ========================= -->
 
 <nav class="navbar">
@@ -35,19 +46,27 @@ NAVIGATION
 <ul class="nav-links">
 
     <li>
-        <a href="#fixtures">Fixtures</a>
+        <a href="#fixtures">
+            Fixtures
+        </a>
     </li>
 
     <li>
-        <a href="#teams">Teams</a>
+        <a href="#teams">
+            Teams
+        </a>
     </li>
 
     <li>
-        <a href="#weather">Weather</a>
+        <a href="#weather">
+            Weather
+        </a>
     </li>
 
     <li>
-        <a href="#venue">Venue</a>
+        <a href="#venue">
+            Venue
+        </a>
     </li>
 
 </ul>
@@ -66,12 +85,21 @@ HERO
 
 <div class="hero-content">
 
+    <img
+    src="images/springbok.png"
+    alt="Springbok Logo"
+    class="springbok-logo">
+
     <h1>
+
         SA U18 Academy Week 2026
+
     </h1>
 
-    <p>
+    <p class="hero-location">
+
         Bergsig Special School • Kariega
+
     </p>
 
     <div class="hero-date">
@@ -80,7 +108,9 @@ HERO
 
     </div>
 
-    <a href="#fixtures" class="hero-btn">
+    <a
+    href="#fixtures"
+    class="hero-btn">
 
         View Fixtures
 
@@ -90,7 +120,6 @@ HERO
 ```
 
 </section>
-
 <!-- =========================
 FIXTURES
 ========================= -->
@@ -105,24 +134,24 @@ FIXTURES
 <div class="tabs">
 
     <button
-        class="tab-btn active"
-        onclick="showDay('day1', this)">
+    class="tab-btn active"
+    onclick="showDay('day1', this)">
 
         Day 1
 
     </button>
 
     <button
-        class="tab-btn"
-        onclick="showDay('day2', this)">
+    class="tab-btn"
+    onclick="showDay('day2', this)">
 
         Day 2
 
     </button>
 
     <button
-        class="tab-btn"
-        onclick="showDay('day3', this)">
+    class="tab-btn"
+    onclick="showDay('day3', this)">
 
         Day 3
 
@@ -132,7 +161,9 @@ FIXTURES
 
 <!-- DAY 1 -->
 
-<div id="day1" class="day active">
+<div
+id="day1"
+class="day active">
 
     <table class="fixture-table">
 
@@ -224,7 +255,9 @@ FIXTURES
 
 <!-- DAY 2 -->
 
-<div id="day2" class="day">
+<div
+id="day2"
+class="day">
 
     <div class="coming-soon">
 
@@ -236,7 +269,9 @@ FIXTURES
 
 <!-- DAY 3 -->
 
-<div id="day3" class="day">
+<div
+id="day3"
+class="day">
 
     <div class="coming-soon">
 
@@ -255,10 +290,12 @@ PARTICIPATING TEAMS
 <section id="teams" class="teams">
 
 ```
-<h2>Participating Teams</h2>
+<h2>
+    Participating Teams
+</h2>
 
 <p class="teams-subtitle">
-    Click any team logo to view squad information.
+    Click a team logo to view squad information
 </p>
 
 <div class="team-grid">
@@ -367,28 +404,6 @@ PARTICIPATING TEAMS
 ```
 
 </section>
-
-<!-- =========================
-TEAM MODAL
-========================= -->
-
-<div id="teamModal" class="modal">
-
-```
-<div class="modal-content">
-
-    <span class="close" onclick="closeTeam()">
-        &times;
-    </span>
-
-    <div id="teamContent">
-
-    </div>
-
-</div>
-```
-
-</div>
 <!-- =========================
 WEATHER
 ========================= -->
@@ -396,19 +411,25 @@ WEATHER
 <section id="weather" class="weather">
 
 ```
-<h2>Tournament Weather</h2>
+<h2>
+    Tournament Weather
+</h2>
 
 <div class="weather-grid">
 
     <div class="weather-card">
 
-        <h3>Monday</h3>
+        <h3>
+            Monday
+        </h3>
 
         <div class="weather-icon">
             ☀️
         </div>
 
-        <p>Day 1</p>
+        <p>
+            Day 1
+        </p>
 
         <span>
             22°C
@@ -418,13 +439,17 @@ WEATHER
 
     <div class="weather-card">
 
-        <h3>Wednesday</h3>
+        <h3>
+            Wednesday
+        </h3>
 
         <div class="weather-icon">
             ⛅
         </div>
 
-        <p>Day 2</p>
+        <p>
+            Day 2
+        </p>
 
         <span>
             19°C
@@ -434,13 +459,17 @@ WEATHER
 
     <div class="weather-card">
 
-        <h3>Friday</h3>
+        <h3>
+            Friday
+        </h3>
 
         <div class="weather-icon">
             🌤️
         </div>
 
-        <p>Day 3</p>
+        <p>
+            Day 3
+        </p>
 
         <span>
             18°C
@@ -460,7 +489,9 @@ VENUE
 <section id="venue" class="venue">
 
 ```
-<h2>Venue Information</h2>
+<h2>
+    Venue Information
+</h2>
 
 <div class="venue-card">
 
@@ -473,18 +504,64 @@ VENUE
     </p>
 
     <p>
-        Host venue of the SA U18 Academy Week 2026.
+        Host venue of the
+        SA U18 Academy Week 2026.
     </p>
 
     <p>
-        All teams are requested to report to the
-        technical table before their scheduled fixtures.
+        Teams are requested to report
+        to the technical table before
+        their scheduled fixture.
+    </p>
+
+    <p>
+        Please arrive early for warm-up,
+        team photographs and match-day
+        administration.
     </p>
 
 </div>
 ```
 
 </section>
+<!-- =========================
+TEAM MODAL
+========================= -->
+
+<div id="teamModal" class="modal">
+
+```
+<div class="modal-content">
+
+    <span
+    class="close"
+    onclick="closeTeam()">
+
+        &times;
+
+    </span>
+
+    <div id="teamContent">
+
+    </div>
+
+    <div class="team-page-link">
+
+        <a
+        id="teamPageBtn"
+        href="#"
+        target="_blank">
+
+            View Full Team Page
+
+        </a>
+
+    </div>
+
+</div>
+```
+
+</div>
 
 <!-- =========================
 FOOTER
@@ -493,17 +570,30 @@ FOOTER
 <footer>
 
 ```
-<h3>
-    SA U18 Academy Week 2026
-</h3>
+<div class="footer-content">
 
-<p>
-    Bergsig Special School • Kariega
-</p>
+    <img
+    src="images/springbok.png"
+    alt="Springbok Logo"
+    class="footer-logo">
 
-<p>
-    Official Tournament Website
-</p>
+    <h3>
+        SA U18 Academy Week 2026
+    </h3>
+
+    <p>
+        Bergsig Special School • Kariega
+    </p>
+
+    <p>
+        6 – 10 July 2026
+    </p>
+
+    <p>
+        Official Tournament Website
+    </p>
+
+</div>
 ```
 
 </footer>
@@ -512,3 +602,6 @@ FOOTER
 
 </body>
 </html>
+
+
+</section>
