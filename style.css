@@ -16,6 +16,7 @@ body{
     font-family:'Poppins',sans-serif;
     background:#f5f7fa;
     color:#222;
+    line-height:1.6;
 }
 
 img{
@@ -29,9 +30,9 @@ section{
 
 h2{
     text-align:center;
-    font-size:2.5rem;
-    color:#001f4d;
+    color:#002147;
     margin-bottom:40px;
+    font-size:2.4rem;
 }
 
 /* ==========================
@@ -39,6 +40,7 @@ h2{
 ========================== */
 
 .navbar{
+
     position:fixed;
     top:0;
     left:0;
@@ -50,30 +52,33 @@ h2{
     justify-content:space-between;
     align-items:center;
 
-    padding:20px 8%;
+    padding:18px 8%;
 
-    z-index:999;
+    z-index:1000;
+
+    box-shadow:
+    0 3px 15px rgba(0,0,0,.15);
 }
 
 .logo{
     color:white;
-    font-size:1.4rem;
     font-weight:700;
+    font-size:1.3rem;
 }
 
-.navbar ul{
+.nav-links{
+    list-style:none;
     display:flex;
     gap:30px;
-    list-style:none;
 }
 
-.navbar a{
-    text-decoration:none;
+.nav-links a{
     color:white;
+    text-decoration:none;
     font-weight:500;
 }
 
-.navbar a:hover{
+.nav-links a:hover{
     color:#ffc107;
 }
 
@@ -87,8 +92,9 @@ h2{
 
     background:
     linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)),
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
     url("images/hero-bg.jpg");
 
     background-size:cover;
@@ -96,19 +102,22 @@ h2{
 
     display:flex;
     align-items:center;
+    justify-content:center;
 
-    padding-left:8%;
+    text-align:center;
+
+    color:white;
+
+    position:relative;
 }
 
 .hero-content{
-    color:white;
-    max-width:700px;
+    max-width:800px;
 }
 
 .hero h1{
-    font-size:5rem;
-    line-height:1;
-    margin-bottom:25px;
+    font-size:4.8rem;
+    margin-bottom:20px;
 }
 
 .hero p{
@@ -116,7 +125,8 @@ h2{
     margin-bottom:20px;
 }
 
-.date{
+.hero-date{
+
     display:inline-block;
 
     background:#ffc107;
@@ -132,10 +142,11 @@ h2{
     margin-bottom:25px;
 }
 
-.btn{
+.hero-btn{
+
     display:inline-block;
 
-    background:#ffc107;
+    background:white;
 
     color:#001f4d;
 
@@ -147,11 +158,11 @@ h2{
 
     font-weight:700;
 
-    margin-top:20px;
+    transition:.3s;
 }
 
-.btn:hover{
-    background:white;
+.hero-btn:hover{
+    background:#ffc107;
 }
 
 /* ==========================
@@ -162,29 +173,92 @@ h2{
     background:white;
 }
 
-.fixture-grid{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
+.tabs{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:30px;
 }
 
-.fixture-card{
+.tab-btn{
+
+    border:none;
+
+    background:#e9edf4;
+
+    padding:12px 30px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-weight:600;
+}
+
+.tab-btn.active{
+    background:#001f4d;
+    color:white;
+}
+
+.day{
+    display:none;
+}
+
+.day.active{
+    display:block;
+}
+
+.fixture-table{
+
+    width:100%;
+
+    border-collapse:collapse;
 
     background:white;
 
+    overflow:hidden;
+
     border-radius:15px;
 
-    padding:20px;
-
-    border-left:5px solid #001f4d;
-
     box-shadow:
-    0 5px 15px rgba(0,0,0,.08);
+    0 5px 20px rgba(0,0,0,.08);
 }
 
-.fixture-card strong{
-    color:#001f4d;
+.fixture-table th{
+
+    background:#001f4d;
+
+    color:white;
+
+    padding:15px;
+}
+
+.fixture-table td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+.fixture-table tr:hover{
+    background:#f7f9fc;
+}
+
+.opening-row{
+    background:#fff3cd;
+    font-weight:700;
+}
+
+.coming-soon{
+
+    background:white;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
 }
 
 /* ==========================
@@ -209,11 +283,13 @@ h2{
 
     background:white;
 
-    border-radius:15px;
+    border-radius:20px;
 
     padding:20px;
 
     text-align:center;
+
+    cursor:pointer;
 
     transition:.3s;
 
@@ -225,25 +301,59 @@ h2{
 
     transform:translateY(-8px);
 
-    cursor:pointer;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
 }
 
 .team-card img{
 
-    height:100px;
+    height:90px;
 
     width:100%;
 
     object-fit:contain;
 
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .team-card p{
 
-    font-weight:600;
-
     color:#001f4d;
+
+    font-weight:600;
+}
+
+/* ==========================
+   WEATHER
+========================== */
+
+.weather-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.weather-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
+}
+
+.weather-icon{
+    font-size:3rem;
+    margin:10px 0;
 }
 
 /* ==========================
@@ -256,17 +366,131 @@ h2{
 
     padding:40px;
 
-    border-radius:15px;
+    border-radius:20px;
 
     text-align:center;
 
     box-shadow:
-    0 5px 15px rgba(0,0,0,.08);
+    0 5px 20px rgba(0,0,0,.08);
 }
 
 .venue-card h3{
     color:#001f4d;
     margin-bottom:10px;
+}
+
+/* ==========================
+   MODAL
+========================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+    rgba(0,0,0,.75);
+
+    z-index:9999;
+}
+
+.modal-content{
+
+    background:white;
+
+    width:95%;
+    max-width:1100px;
+
+    max-height:85vh;
+
+    overflow-y:auto;
+
+    margin:40px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    position:relative;
+}
+
+.close{
+
+    position:absolute;
+
+    right:20px;
+    top:10px;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    color:#001f4d;
+}
+
+.team-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.team-header h2{
+    margin-bottom:10px;
+}
+
+.team-info{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:15px;
+
+    margin-bottom:30px;
+}
+
+.info-box{
+
+    background:#f5f7fa;
+
+    padding:15px;
+
+    border-radius:10px;
+}
+
+.player-table{
+
+    width:100%;
+    border-collapse:collapse;
+}
+
+.player-table th{
+
+    background:#001f4d;
+
+    color:white;
+
+    padding:12px;
+}
+
+.player-table td{
+
+    padding:12px;
+
+    border-bottom:1px solid #ddd;
+}
+
+.player-table tr:nth-child(even){
+    background:#f8f8f8;
 }
 
 /* ==========================
@@ -281,7 +505,7 @@ footer{
 
     text-align:center;
 
-    padding:35px;
+    padding:40px;
 }
 
 /* ==========================
@@ -297,26 +521,27 @@ footer{
         gap:15px;
     }
 
-    .hero{
+    .nav-links{
 
-        text-align:center;
+        flex-wrap:wrap;
 
         justify-content:center;
-
-        padding:20px;
     }
 
     .hero h1{
-        font-size:3rem;
+        font-size:2.8rem;
     }
 
     .hero p{
         font-size:1rem;
     }
 
-    .navbar ul{
-        flex-wrap:wrap;
-        justify-content:center;
+    .fixture-table{
+        font-size:.85rem;
+    }
+
+    .player-table{
+        font-size:.8rem;
     }
 
 }
