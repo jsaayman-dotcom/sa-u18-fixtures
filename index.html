@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,13 +12,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+<!-- NAVBAR -->
 
 <nav class="navbar">
 
@@ -24,36 +25,31 @@
         SA U18 Academy Week 2026
     </div>
 
-    <ul class="nav-links">
+    <ul>
         <li><a href="#fixtures">Fixtures</a></li>
         <li><a href="#teams">Teams</a></li>
-        <li><a href="#weather">Weather</a></li>
         <li><a href="#venue">Venue</a></li>
     </ul>
 
 </nav>
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero">
 
-    <div class="overlay"></div>
-
     <div class="hero-content">
 
-        <h1>SA U18 Academy Week 2026</h1>
+        <h1>SA U18<br>ACADEMY WEEK 2026</h1>
 
         <p>
             Bergsig Special School • Kariega
         </p>
 
-        <div class="hero-date">
+        <span class="date">
             6 – 10 July 2026
-        </div>
+        </span>
 
-        <a href="#fixtures" class="hero-btn">
+        <a href="#fixtures" class="btn">
             View Fixtures
         </a>
 
@@ -61,117 +57,69 @@
 
 </section>
 
-<!-- =========================
-     FIXTURES
-========================= -->
+<!-- FIXTURES -->
 
 <section id="fixtures" class="fixtures">
 
     <h2>Fixtures</h2>
 
-    <div class="tabs">
-
-        <button class="tab-btn active"
-        onclick="showDay('day1', this)">
-            Day 1
-        </button>
-
-        <button class="tab-btn"
-        onclick="showDay('day2', this)">
-            Day 2
-        </button>
-
-        <button class="tab-btn"
-        onclick="showDay('day3', this)">
-            Day 3
-        </button>
-
-    </div>
-
-    <!-- DAY 1 -->
-
-    <div id="day1" class="day active">
+    <div class="fixture-grid">
 
         <div class="fixture-card">
-            <h3>08:30 • A Field</h3>
+            <strong>08:30 • A Field</strong>
             <p>Border vs Pumas</p>
         </div>
 
         <div class="fixture-card">
-            <h3>08:30 • B Field</h3>
+            <strong>08:30 • B Field</strong>
             <p>Border CD vs Griquas</p>
         </div>
 
         <div class="fixture-card">
-            <h3>09:50 • A Field</h3>
+            <strong>09:50 • A Field</strong>
             <p>Free State vs Griffons</p>
         </div>
 
         <div class="fixture-card">
-            <h3>09:50 • B Field</h3>
+            <strong>09:50 • B Field</strong>
             <p>SA LSEN vs Leopards</p>
         </div>
 
         <div class="fixture-card">
-            <h3>11:10 • A Field</h3>
+            <strong>11:10 • A Field</strong>
             <p>Lions XV vs Boland</p>
         </div>
 
         <div class="fixture-card">
-            <h3>11:10 • B Field</h3>
+            <strong>11:10 • B Field</strong>
             <p>Limpopo vs Namibia</p>
         </div>
 
         <div class="fixture-card">
-            <h3>12:30 • A Field</h3>
+            <strong>12:30 • A Field</strong>
             <p>SWD vs Blue Bulls</p>
         </div>
 
         <div class="fixture-card">
-            <h3>12:30 • B Field</h3>
+            <strong>12:30 • B Field</strong>
             <p>Valke vs Zimbabwe</p>
         </div>
 
         <div class="fixture-card">
-            <h3>13:50 • A Field</h3>
+            <strong>13:50 • A Field</strong>
             <p>Western Province vs Sharks</p>
         </div>
 
-        <div class="fixture-card special">
-            <h3>Opening Ceremony</h3>
-        </div>
-
         <div class="fixture-card">
-            <h3>16:00 • A Field</h3>
+            <strong>16:00 • A Field</strong>
             <p>Lions vs Eastern Province</p>
         </div>
 
     </div>
 
-    <!-- DAY 2 -->
-
-    <div id="day2" class="day">
-
-        <div class="fixture-card">
-            <h3>Fixtures To Be Confirmed</h3>
-        </div>
-
-    </div>
-
-    <!-- DAY 3 -->
-
-    <div id="day3" class="day">
-
-        <div class="fixture-card">
-            <h3>Fixtures To Be Confirmed</h3>
-        </div>
-
-    </div>
-
 </section>
-<!-- =========================
-     PARTICIPATING TEAMS
-========================= -->
+
+<!-- TEAMS -->
 
 <section id="teams" class="teams">
 
@@ -179,23 +127,23 @@
 
     <div class="team-grid">
 
-        <div class="team-card" onclick="openTeam('lions')">
-            <img src="images/teams/lions.png" alt="Lions">
+        <div class="team-card">
+            <img src="images/teams/lions.png">
             <p>Lions</p>
         </div>
 
-        <div class="team-card" onclick="openTeam('bulls')">
-            <img src="images/teams/bulls.png" alt="Blue Bulls">
+        <div class="team-card">
+            <img src="images/teams/bulls.png">
             <p>Blue Bulls</p>
         </div>
 
-        <div class="team-card" onclick="openTeam('wp')">
-            <img src="images/teams/wp.png" alt="Western Province">
+        <div class="team-card">
+            <img src="images/teams/wp.png">
             <p>Western Province</p>
         </div>
 
-        <div class="team-card" onclick="openTeam('pumas')">
-            <img src="images/teams/pumas.png" alt="Pumas">
+        <div class="team-card">
+            <img src="images/teams/pumas.png">
             <p>Pumas</p>
         </div>
 
@@ -210,16 +158,6 @@
         </div>
 
         <div class="team-card">
-            <img src="images/teams/boland.png">
-            <p>Boland</p>
-        </div>
-
-        <div class="team-card">
-            <img src="images/teams/border.png">
-            <p>Border</p>
-        </div>
-
-        <div class="team-card">
             <img src="images/teams/griffons.png">
             <p>Griffons</p>
         </div>
@@ -229,85 +167,11 @@
             <p>Leopards</p>
         </div>
 
-        <div class="team-card">
-            <img src="images/teams/valke.png">
-            <p>Valke</p>
-        </div>
-
-        <div class="team-card">
-            <img src="images/teams/griquas.png">
-            <p>Griquas</p>
-        </div>
-
-        <div class="team-card">
-            <img src="images/teams/swd.png">
-            <p>SWD Eagles</p>
-        </div>
-
-        <div class="team-card">
-            <img src="images/teams/namibia.png">
-            <p>Namibia</p>
-        </div>
-
-        <div class="team-card">
-            <img src="images/teams/zimbabwe.png">
-            <p>Zimbabwe</p>
-        </div>
-
     </div>
 
 </section>
 
-<!-- =========================
-     TEAM POPUP
-========================= -->
-
-<div id="teamModal" class="modal">
-
-    <div class="modal-content">
-
-        <span class="close" onclick="closeTeam()">&times;</span>
-
-        <div id="teamContent">
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- =========================
-     WEATHER
-========================= -->
-
-<section id="weather" class="weather">
-
-    <h2>Weather Forecast</h2>
-
-    <div class="weather-grid">
-
-        <div class="weather-card">
-            <h3>Monday</h3>
-            <p>22°C</p>
-        </div>
-
-        <div class="weather-card">
-            <h3>Wednesday</h3>
-            <p>20°C</p>
-        </div>
-
-        <div class="weather-card">
-            <h3>Friday</h3>
-            <p>19°C</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================
-     VENUE
-========================= -->
+<!-- VENUE -->
 
 <section id="venue" class="venue">
 
@@ -323,15 +187,9 @@
 
 </section>
 
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer>
 
-    <h3>SA U18 Academy Week 2026</h3>
-
-    <p>Official Tournament Website</p>
+    SA U18 Academy Week 2026
 
 </footer>
 
